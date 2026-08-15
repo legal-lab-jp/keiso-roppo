@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#183B50">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="刑事訴訟法の条文と学習解説をiPadで確認するオフライン対応条文アプリ">
+  <meta property="og:title" content="刑訴条文ナビ（テスト版）">
+  <meta property="og:description" content="刑事訴訟法320条、321条、322条をiPadで読むためのオフライン対応条文アプリ">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/icon-180.png">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/app-icon.svg">
+  <link rel="stylesheet" href="./assets/css/app.css?v=0.1.1-test">
+  <title>刑訴条文ナビ</title>
+</head>
+<body>
+  <a class="skip-link" href="#article-main">本文へ移動</a>
+  <div class="app-shell" id="app-shell" data-theme="system" data-font-scale="standard">
+    <header class="app-header" aria-label="アプリヘッダー">
+      <a class="brand" href="./" aria-label="刑訴条文ナビ 第320条へ">
+        <img class="brand-icon" src="./assets/icons/app-icon.svg" alt="" width="32" height="32">
+        <span>刑訴条文ナビ</span>
+        <span class="version-badge">TEST 0.1</span>
+      </a>
+      <div class="header-actions">
+        <button class="icon-button" id="header-search" type="button" aria-label="検索を開く" title="検索">⌕</button>
+        <button class="icon-button" id="header-settings" type="button" aria-label="表示と設定を開く" title="表示と設定">Aa</button>
+        <span class="connection-state" id="connection-state" role="status">オフライン準備中</span>
+      </div>
+    </header>
+
+    <div class="update-banner" id="update-banner" hidden role="status">
+      <span>新しい版があります</span>
+      <button id="apply-update" type="button">更新する</button>
+      <button class="text-button" id="dismiss-update" type="button">後で</button>
+    </div>
+
+    <div class="app-layout">
+      <nav class="article-rail" id="article-rail" aria-label="収録条文"></nav>
+      <main class="article-main" id="article-main" tabindex="-1"></main>
+    </div>
+
+    <nav class="bottom-nav" aria-label="下部ナビゲーション">
+      <button type="button" data-overlay="articles" aria-label="条文一覧を開く"><span aria-hidden="true">§</span><span>条文</span></button>
+      <button type="button" data-overlay="search" aria-label="検索を開く"><span aria-hidden="true">⌕</span><span>検索</span></button>
+      <button type="button" data-overlay="bookmarks" aria-label="しおりを開く"><span aria-hidden="true">☆</span><span>しおり</span></button>
+      <button type="button" data-overlay="settings" aria-label="設定を開く"><span aria-hidden="true">⚙</span><span>設定</span></button>
+    </nav>
+    <footer class="app-source-note">
+      <span>テスト版・学習用</span>
+      <a href="https://laws.e-gov.go.jp/law/323AC0000000131" target="_blank" rel="noopener noreferrer">条文出典: e-Gov法令検索</a>
+      <span>学習解説は公式注釈・法的助言ではありません。</span>
+      <a href="./NOTICE.md">出典・再利用条件</a>
+    </footer>
+  </div>
+
+  <div id="overlay-root"></div>
+  <input id="import-file" type="file" accept="application/json,.json" hidden>
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <script type="module" src="./js/app.js?v=0.1.1-test"></script>
+</body>
+</html>

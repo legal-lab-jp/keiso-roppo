@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">刑訴条文ナビ</title>
+  <desc id="desc">藍色の背景に、法令集を表す開いた本と金色のしおり</desc>
+  <rect width="512" height="512" rx="104" fill="#183B50"/>
+  <path d="M109 132c52-16 103-4 147 27v194c-44-31-95-43-147-27V132Zm294 0c-52-16-103-4-147 27v194c44-31 95-43 147-27V132Z" fill="#F6F3EB"/>
+  <path d="M256 159v194" stroke="#C7A545" stroke-width="12" stroke-linecap="round"/>
+  <path d="M145 188c29-8 57-2 82 14M145 232c29-8 57-2 82 14M145 276c29-8 57-2 82 14M367 188c-29-8-57-2-82 14M367 232c-29-8-57-2-82 14M367 276c-29-8-57-2-82 14" fill="none" stroke="#183B50" stroke-width="11" stroke-linecap="round"/>
+  <path d="M342 91h45v122l-22.5-18-22.5 18V91Z" fill="#C7A545"/>
+</svg>
