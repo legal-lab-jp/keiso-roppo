@@ -1,4 +1,4 @@
-const APP_VERSION = "0.1.1-test";
+const APP_VERSION = "0.1.2-test";
 const CONTENT_VERSION = "2026-08-15.test1";
 const SHELL_CACHE = `keiso-roppo-shell-v${APP_VERSION}`;
 const CONTENT_CACHE = `keiso-roppo-content-${CONTENT_VERSION}`;
