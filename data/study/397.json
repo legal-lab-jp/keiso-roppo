@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "397",
+  "articleId": "jp-323AC0000000131-a397",
+  "study": {
+    "title": "控訴理由がある場合の破棄",
+    "topic": "控訴・上告",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "控訴理由→必要的破棄",
+    "oneLine": "法定の控訴理由が認められるとき、控訴裁判所は判決で原判決を破棄します。",
+    "trigger": "379条から382条等の控訴理由を検討した後、その理由が認められた場合の裁判を確認するとき。",
+    "overview": "法定の控訴理由が存在する場合の効果を、原判決の必要的破棄として定めます。破棄後に差戻し・移送をするか、控訴審が自ら判決をするかは400条等で続けて判断します。",
+    "learning": {
+      "remember": "法定控訴理由あり→判決で原判決を破棄、です。",
+      "understand": "控訴理由の要件規定と、理由が認められた後の破棄という効果を接続する条文です。",
+      "lookup": "破棄後の差戻し・移送・自判は400条、不利益変更禁止は402条へ進みます。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a397-p1",
+        "label": "第397条第1項",
+        "studyTitle": "必要的破棄",
+        "purpose": "法定の控訴理由がある原判決を維持せず、控訴審による是正を確実にします。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a397-p1-s01",
+            "role": "requirement",
+            "tag": "法定控訴理由あり",
+            "text": "第三百七十七条乃至第三百八十二条及び第三百八十三条に規定する事由があるときは、"
+          },
+          {
+            "id": "jp-323AC0000000131-a397-p1-s02",
+            "role": "effect",
+            "tag": "原判決を破棄",
+            "text": "判決で原判決を破棄しなければならない。"
+          }
+        ]
+      }
+    ],
+    "omitted": "第2項の職権調査結果に基づく裁量的破棄は、控訴審の職権審査に関する発展事項として省略します。",
+    "related": [
+      {
+        "routeNumber": "379",
+        "displayNumber": "379",
+        "available": true
+      },
+      {
+        "routeNumber": "380",
+        "displayNumber": "380",
+        "available": true
+      },
+      {
+        "routeNumber": "381",
+        "displayNumber": "381",
+        "available": true
+      },
+      {
+        "routeNumber": "382",
+        "displayNumber": "382",
+        "available": true
+      },
+      {
+        "routeNumber": "400",
+        "displayNumber": "400",
+        "available": true
+      },
+      {
+        "routeNumber": "402",
+        "displayNumber": "402",
+        "available": true
+      }
+    ]
+  }
+}

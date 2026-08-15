@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "110",
+  "articleId": "jp-323AC0000000131-a110",
+  "study": {
+    "title": "差押状・捜索状の呈示",
+    "topic": "捜索・差押え",
+    "priority": {
+      "essay": "A",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "執行の原則",
+    "oneLine": "差押状・捜索状を処分対象者に示し、強制処分の根拠と範囲を確認できるようにします。",
+    "trigger": "捜索開始前に令状を見せなかった、別室にいた者へ呈示しなかったなど、令状執行方法の適法性が問題となるとき。",
+    "overview": "令状の存在だけでなく、処分を受ける者への呈示を要求することで、対象者が処分の法的根拠・対象・範囲を確認できるようにします。捜査では222条1項により準用されます。",
+    "learning": {
+      "remember": "「処分を受ける者」に差押状又は捜索状を示すこと。",
+      "understand": "令状発付の適法性と、執行時の呈示方法の適法性は別に検討すること。",
+      "lookup": "電磁的記録提供命令の呈示・立入りに関する新しい詳細は222条8項以下で必要時に確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a110-p1",
+        "label": "第110条",
+        "studyTitle": "執行の原則",
+        "purpose": "処分対象者に令状の存在と限定範囲を知らせ、強制処分への手続的保障を与えます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a110-p1-s01",
+            "role": "actor",
+            "tag": "対象令状",
+            "text": "差押状又は捜索状は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a110-p1-s02",
+            "role": "actor",
+            "tag": "呈示相手",
+            "text": "処分を受ける者に"
+          },
+          {
+            "id": "jp-323AC0000000131-a110-p1-s03",
+            "role": "effect",
+            "tag": "呈示義務",
+            "text": "これを示さなければならない。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "111",
+        "displayNumber": "111",
+        "available": true
+      },
+      {
+        "routeNumber": "114",
+        "displayNumber": "114",
+        "available": true
+      },
+      {
+        "routeNumber": "218",
+        "displayNumber": "218",
+        "available": true
+      },
+      {
+        "routeNumber": "219",
+        "displayNumber": "219",
+        "available": true
+      },
+      {
+        "routeNumber": "222",
+        "displayNumber": "222",
+        "available": true
+      }
+    ]
+  }
+}

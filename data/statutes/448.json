@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "revisionId": "323AC0000000131_20260813_508AC0000000067",
+  "source": {
+    "provider": "e-Gov法令API Version 2",
+    "sourceUrl": "https://laws.e-gov.go.jp/law/323AC0000000131",
+    "apiUrl": "https://laws.e-gov.go.jp/api/2/law_file/xml/323AC0000000131_20260813_508AC0000000067",
+    "verifiedAt": "2026-08-15"
+  },
+  "article": {
+    "id": "jp-323AC0000000131-a448",
+    "num": "448",
+    "routeNum": "448",
+    "displayNumber": "第四百四十八条",
+    "officialCaption": null,
+    "path": [
+      "第四編　再審"
+    ],
+    "order": 626,
+    "paragraphs": [
+      {
+        "id": "jp-323AC0000000131-a448-p1",
+        "noteTargetId": "jp-323AC0000000131-a448-p1",
+        "num": "1",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a448-p1-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "再審の請求が理由のあるときは、再審開始の決定をしなければならない。"
+                }
+              ],
+              "plainText": "再審の請求が理由のあるときは、再審開始の決定をしなければならない。"
+            }
+          }
+        ],
+        "plainText": "再審の請求が理由のあるときは、再審開始の決定をしなければならない。"
+      },
+      {
+        "id": "jp-323AC0000000131-a448-p2",
+        "noteTargetId": "jp-323AC0000000131-a448-p2",
+        "num": "2",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a448-p2-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "再審開始の決定をしたときは、決定で刑の執行を停止することができる。"
+                }
+              ],
+              "plainText": "再審開始の決定をしたときは、決定で刑の執行を停止することができる。"
+            }
+          }
+        ],
+        "plainText": "再審開始の決定をしたときは、決定で刑の執行を停止することができる。"
+      },
+      {
+        "id": "jp-323AC0000000131-a448-p3",
+        "noteTargetId": "jp-323AC0000000131-a448-p3",
+        "num": "3",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a448-p3-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "前項の規定により死刑の執行を停止したときは、決定で刑法第十一条第二項の規定による拘置を停止することができる。"
+                }
+              ],
+              "plainText": "前項の規定により死刑の執行を停止したときは、決定で刑法第十一条第二項の規定による拘置を停止することができる。"
+            }
+          }
+        ],
+        "plainText": "前項の規定により死刑の執行を停止したときは、決定で刑法第十一条第二項の規定による拘置を停止することができる。"
+      }
+    ],
+    "plainText": "第四百四十八条再審の請求が理由のあるときは、再審開始の決定をしなければならない。再審開始の決定をしたときは、決定で刑の執行を停止することができる。前項の規定により死刑の執行を停止したときは、決定で刑法第十一条第二項の規定による拘置を停止することができる。"
+  }
+}

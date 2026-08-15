@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "revisionId": "323AC0000000131_20260813_508AC0000000067",
+  "source": {
+    "provider": "e-Gov法令API Version 2",
+    "sourceUrl": "https://laws.e-gov.go.jp/law/323AC0000000131",
+    "apiUrl": "https://laws.e-gov.go.jp/api/2/law_file/xml/323AC0000000131_20260813_508AC0000000067",
+    "verifiedAt": "2026-08-15"
+  },
+  "article": {
+    "id": "jp-323AC0000000131-a30",
+    "num": "30",
+    "routeNum": "30",
+    "displayNumber": "第三十条",
+    "officialCaption": null,
+    "path": [
+      "第一編　総則",
+      "第四章　弁護及び補佐"
+    ],
+    "order": 30,
+    "paragraphs": [
+      {
+        "id": "jp-323AC0000000131-a30-p1",
+        "noteTargetId": "jp-323AC0000000131-a30-p1",
+        "num": "1",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a30-p1-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "被告人又は被疑者は、何時でも弁護人を選任することができる。"
+                }
+              ],
+              "plainText": "被告人又は被疑者は、何時でも弁護人を選任することができる。"
+            }
+          }
+        ],
+        "plainText": "被告人又は被疑者は、何時でも弁護人を選任することができる。"
+      },
+      {
+        "id": "jp-323AC0000000131-a30-p2",
+        "noteTargetId": "jp-323AC0000000131-a30-p2",
+        "num": "2",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a30-p2-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "被告人又は被疑者の法定代理人、保佐人、配偶者、直系の親族及び兄弟姉妹は、独立して弁護人を選任することができる。"
+                }
+              ],
+              "plainText": "被告人又は被疑者の法定代理人、保佐人、配偶者、直系の親族及び兄弟姉妹は、独立して弁護人を選任することができる。"
+            }
+          }
+        ],
+        "plainText": "被告人又は被疑者の法定代理人、保佐人、配偶者、直系の親族及び兄弟姉妹は、独立して弁護人を選任することができる。"
+      }
+    ],
+    "plainText": "第三十条被告人又は被疑者は、何時でも弁護人を選任することができる。被告人又は被疑者の法定代理人、保佐人、配偶者、直系の親族及び兄弟姉妹は、独立して弁護人を選任することができる。"
+  }
+}

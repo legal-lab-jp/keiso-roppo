@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "324",
+  "articleId": "jp-323AC0000000131-a324",
+  "study": {
+    "title": "供述中の他人の供述",
+    "topic": "伝聞・証拠例外",
+    "priority": {
+      "essay": "A",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "口頭伝聞・再伝聞",
+    "oneLine": "法廷供述の中に含まれる別人の供述を、原供述者が被告人か否かで322条又は321条1項3号へ振り分けます。",
+    "trigger": "証人が法廷で『被告人がこう言った』『第三者がこう言った』と、公判期日外の他人の発言を語るとき。",
+    "overview": "目の前の証人を尋問できても、その証言内容となった原供述者の知覚・記憶・表現・誠実性は直接吟味できません。原供述者が被告人なら322条、被告人以外なら321条1項3号を準用し、口頭伝聞・再伝聞の証拠能力を判断します。",
+    "learning": {
+      "remember": "原供述者が被告人→1項で322条。被告人以外→2項で321条1項3号です。",
+      "understand": "法廷で話している者ではなく、内容の真実性が問題となる元の発言者を特定して条文を選びます。",
+      "lookup": "供述の存在自体が意味を持つ場合は非伝聞の可能性があるため、先に320条の立証趣旨を確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a324-p1",
+        "label": "第324条第1項",
+        "studyTitle": "被告人の供述を内容とする供述",
+        "purpose": "法廷供述に含まれる被告人の公判外供述を、被告人供述書面と同様の信用性・任意性基準で規律します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a324-p1-s01",
+            "role": "requirement",
+            "tag": "被告人以外の者の公判供述",
+            "text": "被告人以外の者の公判準備又は公判期日における供述で"
+          },
+          {
+            "id": "jp-323AC0000000131-a324-p1-s02",
+            "role": "requirement",
+            "tag": "被告人の供述を内容",
+            "text": "被告人の供述をその内容とするものについては、"
+          },
+          {
+            "id": "jp-323AC0000000131-a324-p1-s03",
+            "role": "effect",
+            "tag": "322条準用",
+            "text": "第三百二十二条の規定を準用する。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a324-p2",
+        "label": "第324条第2項",
+        "studyTitle": "第三者の供述を内容とする供述",
+        "purpose": "法廷供述に含まれる第三者の公判外供述を、その他の供述書面と同じ厳格な要件で規律します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a324-p2-s01",
+            "role": "requirement",
+            "tag": "被告人以外の者の公判供述",
+            "text": "被告人以外の者の公判準備又は公判期日における供述で"
+          },
+          {
+            "id": "jp-323AC0000000131-a324-p2-s02",
+            "role": "requirement",
+            "tag": "第三者の供述を内容",
+            "text": "被告人以外の者の供述をその内容とするものについては、"
+          },
+          {
+            "id": "jp-323AC0000000131-a324-p2-s03",
+            "role": "effect",
+            "tag": "321条1項3号準用",
+            "text": "第三百二十一条第一項第三号の規定を準用する。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "320",
+        "displayNumber": "320",
+        "available": true
+      },
+      {
+        "routeNumber": "321",
+        "displayNumber": "321",
+        "available": true
+      },
+      {
+        "routeNumber": "322",
+        "displayNumber": "322",
+        "available": true
+      },
+      {
+        "routeNumber": "325",
+        "displayNumber": "325",
+        "available": true
+      },
+      {
+        "routeNumber": "328",
+        "displayNumber": "328",
+        "available": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "221",
+  "articleId": "jp-323AC0000000131-a221",
+  "study": {
+    "title": "遺留物・任意提出物の領置",
+    "topic": "捜索・差押え",
+    "priority": {
+      "essay": "A",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "差押えと区別",
+    "oneLine": "被疑者等が遺留した物又は権限ある者が任意提出した物を、令状による差押えを経ずに占有取得できます。",
+    "trigger": "ごみ・置き忘れた物、所有者や所持者が任意に提出した物を捜査機関が取得した場面。",
+    "overview": "相手方の意思に反して占有を奪う差押えと異なり、すでに遺留された物又は任意提出された物を捜査機関が受領する処分です。任意提出では、提出者が所有者・所持者・保管者として処分権限を持ち、真に任意に提出したかが重要です。",
+    "learning": {
+      "remember": "遺留物、又は所有者・所持者・保管者が任意提出した物を領置できること。",
+      "understand": "差押えのように相手方の意思に反して占有を取得する処分ではなく、遺留・任意提出が前提であること。",
+      "lookup": "領置後の保管・還付には222条を通じて99条1項、123条1項から3項等が準用されます。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a221-p1",
+        "label": "第221条",
+        "studyTitle": "二類型",
+        "purpose": "強制的な占有奪取を伴わない遺留物・任意提出物を、証拠保全のため捜査機関が受領できるようにします。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a221-p1-s01",
+            "role": "actor",
+            "tag": "領置主体",
+            "text": "検察官、検察事務官又は司法警察職員は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a221-p1-s02",
+            "role": "requirement",
+            "tag": "遺留物",
+            "text": "被疑者その他の者が遺留した物又は"
+          },
+          {
+            "id": "jp-323AC0000000131-a221-p1-s03",
+            "role": "requirement",
+            "tag": "任意提出物",
+            "text": "所有者、所持者若しくは保管者が任意に提出した物は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a221-p1-s04",
+            "role": "effect",
+            "tag": "領置",
+            "text": "これを領置することができる。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "99",
+        "displayNumber": "99",
+        "available": true
+      },
+      {
+        "routeNumber": "123",
+        "displayNumber": "123",
+        "available": true
+      },
+      {
+        "routeNumber": "218",
+        "displayNumber": "218",
+        "available": true
+      },
+      {
+        "routeNumber": "220",
+        "displayNumber": "220",
+        "available": true
+      },
+      {
+        "routeNumber": "222",
+        "displayNumber": "222",
+        "available": true
+      }
+    ]
+  }
+}

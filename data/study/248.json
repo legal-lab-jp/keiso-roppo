@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "248",
+  "articleId": "jp-323AC0000000131-a248",
+  "study": {
+    "title": "起訴便宜主義",
+    "topic": "公訴・訴因",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "考慮事情",
+    "oneLine": "嫌疑があっても、法定の諸事情から訴追不要と判断すれば公訴を提起しないことを認めます。",
+    "trigger": "嫌疑不十分ではなく、嫌疑はあるのに起訴猶予とできる根拠や考慮事情を確認するとき。",
+    "overview": "犯罪の成否だけで機械的に起訴せず、犯人側・犯罪側・犯罪後の事情を総合して訴追の必要性を判断させます。『起訴できない』嫌疑なし・嫌疑不十分と、『起訴できるがしない』起訴猶予を区別します。",
+    "learning": {
+      "remember": "犯人の性格・年齢・境遇、犯罪の軽重・情状、犯罪後の情況という三群の考慮事情です。",
+      "understand": "247条が誰に起訴権があるか、248条がその権限を行使しない裁量を認めること。",
+      "lookup": "少年事件等の訴追裁量に関する特則は、個別に問われたときに確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a248-p1",
+        "label": "第248条",
+        "studyTitle": "起訴猶予",
+        "purpose": "個別事件の事情と刑事政策上の必要性を踏まえ、不要な訴追を避ける裁量を検察官に認めます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a248-p1-s01",
+            "role": "requirement",
+            "tag": "犯人側の事情",
+            "text": "犯人の性格、年齢及び境遇、"
+          },
+          {
+            "id": "jp-323AC0000000131-a248-p1-s02",
+            "role": "requirement",
+            "tag": "犯罪の事情",
+            "text": "犯罪の軽重及び情状並びに"
+          },
+          {
+            "id": "jp-323AC0000000131-a248-p1-s03",
+            "role": "requirement",
+            "tag": "犯罪後の事情",
+            "text": "犯罪後の情況により"
+          },
+          {
+            "id": "jp-323AC0000000131-a248-p1-s04",
+            "role": "requirement",
+            "tag": "訴追不要",
+            "text": "訴追を必要としないときは、"
+          },
+          {
+            "id": "jp-323AC0000000131-a248-p1-s05",
+            "role": "effect",
+            "tag": "不起訴の裁量",
+            "text": "公訴を提起しないことができる。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "247",
+        "displayNumber": "247",
+        "available": true
+      },
+      {
+        "routeNumber": "256",
+        "displayNumber": "256",
+        "available": true
+      }
+    ]
+  }
+}

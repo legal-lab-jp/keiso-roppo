@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "37",
+  "articleId": "jp-323AC0000000131-a37",
+  "study": {
+    "title": "職権による被告人の国選弁護",
+    "topic": "弁護",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "号を区別",
+    "oneLine": "防御に困難を抱えやすい被告人について、裁判所が職権で弁護人を付すことを認めます。",
+    "trigger": "被告人の年齢、障害、精神状態等から、請求がなくても弁護人を付す必要があるかを確認するとき。",
+    "overview": "被告人本人から適切な請求を期待しにくい場合に、防御権を実質化するため裁判所へ職権選任の裁量を与えます。「できる」とする規定であり、必要的弁護とは区別します。",
+    "learning": {
+      "remember": "弁護人がいないこと、1号から4号の属性、5号の包括条項、「できる」。",
+      "understand": "本人の防御能力・意思疎通の困難を補う制度であること。",
+      "lookup": "各号の古い表記を含む正確な文言は短答時に確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a37-p1-intro",
+        "label": "第37条柱書",
+        "studyTitle": "効果を区別",
+        "purpose": "一定の事情がある被告人に弁護人がいない場合、裁判所の職権選任を可能にします。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a37-p1-intro-s01",
+            "role": "requirement",
+            "tag": "前提",
+            "text": "左の場合に被告人に弁護人がないときは、"
+          },
+          {
+            "id": "jp-323AC0000000131-a37-p1-intro-s02",
+            "role": "actor",
+            "tag": "主体",
+            "text": "裁判所は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a37-p1-intro-s03",
+            "role": "effect",
+            "tag": "裁量",
+            "text": "職権で弁護人を附することができる。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a37-p1-i1",
+        "label": "第37条第1号",
+        "studyTitle": "短答",
+        "purpose": "未成年者の知識・判断能力の不足を弁護人により補います。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a37-p1-i1-s01",
+            "role": "requirement",
+            "tag": "未成年",
+            "text": "被告人が未成年者であるとき。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a37-p1-i2",
+        "label": "第37条第2号",
+        "studyTitle": "短答",
+        "purpose": "高齢に伴う手続理解・防御活動上の困難に配慮します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a37-p1-i2-s01",
+            "role": "requirement",
+            "tag": "年齢",
+            "text": "被告人が年齢七十年以上の者であるとき。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a37-p1-i3",
+        "label": "第37条第3号",
+        "studyTitle": "短答",
+        "purpose": "聴覚・発話上の制約による意思疎通の困難を補います。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a37-p1-i3-s01",
+            "role": "requirement",
+            "tag": "意思疎通",
+            "text": "被告人が耳の聞えない者又は口のきけない者であるとき。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a37-p1-i4",
+        "label": "第37条第4号",
+        "studyTitle": "短答",
+        "purpose": "精神状態により適切な防御が困難となるおそれに対応します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a37-p1-i4-s01",
+            "role": "requirement",
+            "tag": "精神状態",
+            "text": "被告人が心神喪失者又は心神耗弱者である疑があるとき。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a37-p1-i5",
+        "label": "第37条第5号",
+        "studyTitle": "包括条項",
+        "purpose": "列挙事情以外でも、具体的な防御上の必要に対応できるようにします。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a37-p1-i5-s01",
+            "role": "requirement",
+            "tag": "その他",
+            "text": "その他必要と認めるとき。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "36",
+        "displayNumber": "36",
+        "available": true
+      },
+      {
+        "routeNumber": "37-2",
+        "displayNumber": "37の2",
+        "available": true
+      }
+    ]
+  }
+}

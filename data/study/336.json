@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "336",
+  "articleId": "jp-323AC0000000131-a336",
+  "study": {
+    "title": "無罪判決",
+    "topic": "裁判",
+    "priority": {
+      "essay": "A",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "本案の無罪",
+    "oneLine": "被告事件が罪とならない場合又は犯罪の証明がない場合には、判決で無罪を言い渡します。",
+    "trigger": "認定事実が犯罪を構成しない場合、違法性・責任が阻却される場合、又は犯罪の証明が合理的疑いを超えない場合。",
+    "overview": "本案について審理した結果、法律上犯罪にならない場合と、事実上犯罪の証明が足りない場合の双方を無罪判決に結び付けます。訴追条件や手続上の障害を理由とする免訴・公訴棄却とは区別します。",
+    "learning": {
+      "remember": "罪とならない、又は犯罪の証明がない→判決で無罪です。",
+      "understand": "構成要件・違法性・責任の法律判断と、証明不足の事実判断という二つの入口があります。",
+      "lookup": "有罪判決の判示事項は335条、訴追権消滅等は337条、手続上の公訴棄却は338・339条です。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a336-p1",
+        "label": "第336条",
+        "studyTitle": "無罪の二類型",
+        "purpose": "犯罪が成立しない場合又は有罪の証明が尽くされない場合に、被告人を有罪判断から解放します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a336-p1-s01",
+            "role": "requirement",
+            "tag": "罪とならない",
+            "text": "被告事件が罪とならないとき、又は"
+          },
+          {
+            "id": "jp-323AC0000000131-a336-p1-s02",
+            "role": "requirement",
+            "tag": "犯罪の証明なし",
+            "text": "被告事件について犯罪の証明がないときは、"
+          },
+          {
+            "id": "jp-323AC0000000131-a336-p1-s03",
+            "role": "effect",
+            "tag": "判決で無罪",
+            "text": "判決で無罪の言渡をしなければならない。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "317",
+        "displayNumber": "317",
+        "available": true
+      },
+      {
+        "routeNumber": "335",
+        "displayNumber": "335",
+        "available": true
+      },
+      {
+        "routeNumber": "337",
+        "displayNumber": "337",
+        "available": true
+      },
+      {
+        "routeNumber": "338",
+        "displayNumber": "338",
+        "available": true
+      },
+      {
+        "routeNumber": "339",
+        "displayNumber": "339",
+        "available": true
+      }
+    ]
+  }
+}

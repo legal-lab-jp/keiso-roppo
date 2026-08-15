@@ -1,7 +1,8 @@
 {
-  "appVersion": "0.1.2-test",
-  "contentVersion": "2026-08-15.test1",
-  "releasedAt": "2026-08-15T12:00:00+09:00",
+  "appVersion": "1.0.1",
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "releasedAt": "2026-08-15T18:00:00+09:00",
   "lawRevisionId": "323AC0000000131_20260813_508AC0000000067",
   "verifiedAt": "2026-08-15"
 }

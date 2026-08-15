@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "320",
+  "articleId": "jp-323AC0000000131-a320",
+  "study": {
+    "title": "伝聞法則の原則",
+    "topic": "伝聞・証拠例外",
+    "priority": {
+      "essay": "A",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "伝聞の入口",
+    "oneLine": "321条から328条の例外を除き、供述書面や公判期日外の他人の供述を内容とする供述を証拠から排除します。",
+    "trigger": "書面・録音・証言中の他人の発言を、供述内容の真実性を立証するために使おうとするとき。",
+    "overview": "供述証拠は、知覚・記憶・表現・誠実性の各過程に誤りが入り得るため、原供述者を公判廷で尋問できない資料を原則として排除します。まず立証趣旨を確定し、その内容が真実であることを証明するために用いる場合に伝聞性を検討し、該当すれば321条以下の例外へ進みます。",
+    "learning": {
+      "remember": "立証趣旨を確定→内容の真実性を証明する供述証拠か→伝聞なら321条から328条の例外へ進みます。",
+      "understand": "問題は書面か音声かではなく、供述過程の正確性を反対尋問等で吟味できないまま内容を真実として使う点です。",
+      "lookup": "非伝聞と判断した場合は320条の禁止外です。伝聞なら原供述者と証拠形態から321～324条を選びます。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a320-p1",
+        "label": "第320条第1項",
+        "studyTitle": "伝聞証拠の原則禁止",
+        "purpose": "原供述者に対する反対尋問等を欠く供述証拠を原則排除し、事実認定の正確性を確保します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a320-p1-s01",
+            "role": "limit",
+            "tag": "321～328条の例外",
+            "text": "第三百二十一条乃至第三百二十八条に規定する場合を除いては、"
+          },
+          {
+            "id": "jp-323AC0000000131-a320-p1-s02",
+            "role": "requirement",
+            "tag": "供述に代わる書面",
+            "text": "公判期日における供述に代えて書面を証拠とし、又は"
+          },
+          {
+            "id": "jp-323AC0000000131-a320-p1-s03",
+            "role": "requirement",
+            "tag": "公判期日外の他人の供述内容",
+            "text": "公判期日外における他の者の供述を内容とする供述を"
+          },
+          {
+            "id": "jp-323AC0000000131-a320-p1-s04",
+            "role": "effect",
+            "tag": "証拠とできない",
+            "text": "証拠とすることはできない。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a320-p2",
+        "label": "第320条第2項",
+        "studyTitle": "簡易公判手続の特則",
+        "purpose": "有罪陳述を前提とする簡易公判手続では証拠手続を簡略化しつつ、異議がある証拠には伝聞法則を維持します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a320-p2-s01",
+            "role": "requirement",
+            "tag": "簡易公判手続の決定事件",
+            "text": "第二百九十一条の二の決定があつた事件の証拠については、"
+          },
+          {
+            "id": "jp-323AC0000000131-a320-p2-s02",
+            "role": "effect",
+            "tag": "伝聞法則を不適用",
+            "text": "前項の規定は、これを適用しない。"
+          },
+          {
+            "id": "jp-323AC0000000131-a320-p2-s03",
+            "role": "limit",
+            "tag": "当事者が異議",
+            "text": "但し、検察官、被告人又は弁護人が証拠とすることに異議を述べたものについては、"
+          },
+          {
+            "id": "jp-323AC0000000131-a320-p2-s04",
+            "role": "effect",
+            "tag": "不適用の例外",
+            "text": "この限りでない。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "317",
+        "displayNumber": "317",
+        "available": true
+      },
+      {
+        "routeNumber": "321",
+        "displayNumber": "321",
+        "available": true
+      },
+      {
+        "routeNumber": "321-2",
+        "displayNumber": "321の2",
+        "available": true
+      },
+      {
+        "routeNumber": "321-3",
+        "displayNumber": "321の3",
+        "available": true
+      },
+      {
+        "routeNumber": "322",
+        "displayNumber": "322",
+        "available": true
+      },
+      {
+        "routeNumber": "323",
+        "displayNumber": "323",
+        "available": true
+      },
+      {
+        "routeNumber": "324",
+        "displayNumber": "324",
+        "available": true
+      },
+      {
+        "routeNumber": "326",
+        "displayNumber": "326",
+        "available": true
+      },
+      {
+        "routeNumber": "328",
+        "displayNumber": "328",
+        "available": true
+      }
+    ]
+  }
+}

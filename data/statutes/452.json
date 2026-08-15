@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "revisionId": "323AC0000000131_20260813_508AC0000000067",
+  "source": {
+    "provider": "e-Gov法令API Version 2",
+    "sourceUrl": "https://laws.e-gov.go.jp/law/323AC0000000131",
+    "apiUrl": "https://laws.e-gov.go.jp/api/2/law_file/xml/323AC0000000131_20260813_508AC0000000067",
+    "verifiedAt": "2026-08-15"
+  },
+  "article": {
+    "id": "jp-323AC0000000131-a452",
+    "num": "452",
+    "routeNum": "452",
+    "displayNumber": "第四百五十二条",
+    "officialCaption": null,
+    "path": [
+      "第四編　再審"
+    ],
+    "order": 632,
+    "paragraphs": [
+      {
+        "id": "jp-323AC0000000131-a452-p1",
+        "noteTargetId": "jp-323AC0000000131-a452-p1",
+        "num": "1",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a452-p1-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "再審においては、原判決の刑より重い刑を言い渡すことはできない。"
+                }
+              ],
+              "plainText": "再審においては、原判決の刑より重い刑を言い渡すことはできない。"
+            }
+          }
+        ],
+        "plainText": "再審においては、原判決の刑より重い刑を言い渡すことはできない。"
+      }
+    ],
+    "plainText": "第四百五十二条再審においては、原判決の刑より重い刑を言い渡すことはできない。"
+  }
+}

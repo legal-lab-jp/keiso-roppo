@@ -1,0 +1,921 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "scope": "司法試験・司法試験予備試験向け重要条文",
+  "articles": [
+    {
+      "routeNumber": "1",
+      "displayNumber": "1",
+      "topic": "総則",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "30",
+      "displayNumber": "30",
+      "topic": "弁護",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "36",
+      "displayNumber": "36",
+      "topic": "弁護",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "B",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "37",
+      "displayNumber": "37",
+      "topic": "弁護",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "37-2",
+      "displayNumber": "37の2",
+      "topic": "弁護",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "39",
+      "displayNumber": "39",
+      "topic": "弁護",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "60",
+      "displayNumber": "60",
+      "topic": "勾留",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "61",
+      "displayNumber": "61",
+      "topic": "勾留",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "81",
+      "displayNumber": "81",
+      "topic": "勾留",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "82",
+      "displayNumber": "82",
+      "topic": "勾留",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "87",
+      "displayNumber": "87",
+      "topic": "勾留",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "88",
+      "displayNumber": "88",
+      "topic": "保釈",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "89",
+      "displayNumber": "89",
+      "topic": "保釈",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "90",
+      "displayNumber": "90",
+      "topic": "保釈",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "93",
+      "displayNumber": "93",
+      "topic": "保釈",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "96",
+      "displayNumber": "96",
+      "topic": "保釈",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "99",
+      "displayNumber": "99",
+      "topic": "捜索・差押え",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "100",
+      "displayNumber": "100",
+      "topic": "捜索・差押え",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "102",
+      "displayNumber": "102",
+      "topic": "捜索・差押え",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "105",
+      "displayNumber": "105",
+      "topic": "捜索・差押え",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "110",
+      "displayNumber": "110",
+      "topic": "捜索・差押え",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "111",
+      "displayNumber": "111",
+      "topic": "捜索・差押え",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "114",
+      "displayNumber": "114",
+      "topic": "捜索・差押え",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "116",
+      "displayNumber": "116",
+      "topic": "捜索・差押え",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "123",
+      "displayNumber": "123",
+      "topic": "捜索・差押え",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "129",
+      "displayNumber": "129",
+      "topic": "検証・鑑定",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "131",
+      "displayNumber": "131",
+      "topic": "検証・鑑定",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "189",
+      "displayNumber": "189",
+      "topic": "捜査総論",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "B",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "191",
+      "displayNumber": "191",
+      "topic": "捜査総論",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "B",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "197",
+      "displayNumber": "197",
+      "topic": "捜査総論",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "198",
+      "displayNumber": "198",
+      "topic": "取調べ",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "199",
+      "displayNumber": "199",
+      "topic": "逮捕",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "200",
+      "displayNumber": "200",
+      "topic": "逮捕",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "201",
+      "displayNumber": "201",
+      "topic": "逮捕",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "203",
+      "displayNumber": "203",
+      "topic": "逮捕",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "204",
+      "displayNumber": "204",
+      "topic": "逮捕",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "205",
+      "displayNumber": "205",
+      "topic": "逮捕",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "206",
+      "displayNumber": "206",
+      "topic": "逮捕",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "B",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "207",
+      "displayNumber": "207",
+      "topic": "被疑者勾留",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "208",
+      "displayNumber": "208",
+      "topic": "被疑者勾留",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "210",
+      "displayNumber": "210",
+      "topic": "逮捕",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "211",
+      "displayNumber": "211",
+      "topic": "逮捕",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "B",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "212",
+      "displayNumber": "212",
+      "topic": "逮捕",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "213",
+      "displayNumber": "213",
+      "topic": "逮捕",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "217",
+      "displayNumber": "217",
+      "topic": "逮捕",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "218",
+      "displayNumber": "218",
+      "topic": "捜索・差押え",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "219",
+      "displayNumber": "219",
+      "topic": "捜索・差押え",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "220",
+      "displayNumber": "220",
+      "topic": "捜索・差押え",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "221",
+      "displayNumber": "221",
+      "topic": "捜索・差押え",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "222",
+      "displayNumber": "222",
+      "topic": "捜索・差押え",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "223",
+      "displayNumber": "223",
+      "topic": "検証・鑑定",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "225",
+      "displayNumber": "225",
+      "topic": "検証・鑑定",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "246",
+      "displayNumber": "246",
+      "topic": "公訴・訴因",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "247",
+      "displayNumber": "247",
+      "topic": "公訴・訴因",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "248",
+      "displayNumber": "248",
+      "topic": "公訴・訴因",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "250",
+      "displayNumber": "250",
+      "topic": "公訴・訴因",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "254",
+      "displayNumber": "254",
+      "topic": "公訴・訴因",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "256",
+      "displayNumber": "256",
+      "topic": "公訴・訴因",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "282",
+      "displayNumber": "282",
+      "topic": "公判手続",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "286",
+      "displayNumber": "286",
+      "topic": "公判手続",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "289",
+      "displayNumber": "289",
+      "topic": "公判手続",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "291",
+      "displayNumber": "291",
+      "topic": "公判手続",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "292",
+      "displayNumber": "292",
+      "topic": "公判手続",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "B",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "294",
+      "displayNumber": "294",
+      "topic": "公判手続",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "B",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "295",
+      "displayNumber": "295",
+      "topic": "公判手続",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "296",
+      "displayNumber": "296",
+      "topic": "証拠調べ・証拠総則",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "297",
+      "displayNumber": "297",
+      "topic": "証拠調べ・証拠総則",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "298",
+      "displayNumber": "298",
+      "topic": "証拠調べ・証拠総則",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "299",
+      "displayNumber": "299",
+      "topic": "証拠調べ・証拠総則",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "304",
+      "displayNumber": "304",
+      "topic": "証拠調べ・証拠総則",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "305",
+      "displayNumber": "305",
+      "topic": "証拠調べ・証拠総則",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "306",
+      "displayNumber": "306",
+      "topic": "証拠調べ・証拠総則",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "312",
+      "displayNumber": "312",
+      "topic": "公訴・訴因",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "316-2",
+      "displayNumber": "316の2",
+      "topic": "公判前整理・証拠開示",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "316-13",
+      "displayNumber": "316の13",
+      "topic": "公判前整理・証拠開示",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "316-14",
+      "displayNumber": "316の14",
+      "topic": "公判前整理・証拠開示",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "316-15",
+      "displayNumber": "316の15",
+      "topic": "公判前整理・証拠開示",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "316-17",
+      "displayNumber": "316の17",
+      "topic": "公判前整理・証拠開示",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "316-18",
+      "displayNumber": "316の18",
+      "topic": "公判前整理・証拠開示",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "B",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "316-20",
+      "displayNumber": "316の20",
+      "topic": "公判前整理・証拠開示",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "316-26",
+      "displayNumber": "316の26",
+      "topic": "公判前整理・証拠開示",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "316-32",
+      "displayNumber": "316の32",
+      "topic": "公判前整理・証拠開示",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "317",
+      "displayNumber": "317",
+      "topic": "証拠調べ・証拠総則",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "318",
+      "displayNumber": "318",
+      "topic": "証拠調べ・証拠総則",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "319",
+      "displayNumber": "319",
+      "topic": "自白・被告人供述",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "320",
+      "displayNumber": "320",
+      "topic": "伝聞・証拠例外",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "321",
+      "displayNumber": "321",
+      "topic": "伝聞・証拠例外",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "321-2",
+      "displayNumber": "321の2",
+      "topic": "伝聞・証拠例外",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "B",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "321-3",
+      "displayNumber": "321の3",
+      "topic": "伝聞・証拠例外",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "322",
+      "displayNumber": "322",
+      "topic": "自白・被告人供述",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "323",
+      "displayNumber": "323",
+      "topic": "伝聞・証拠例外",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "324",
+      "displayNumber": "324",
+      "topic": "伝聞・証拠例外",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "325",
+      "displayNumber": "325",
+      "topic": "伝聞・証拠例外",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "B",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "326",
+      "displayNumber": "326",
+      "topic": "伝聞・証拠例外",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "327",
+      "displayNumber": "327",
+      "topic": "伝聞・証拠例外",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "B",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "328",
+      "displayNumber": "328",
+      "topic": "伝聞・証拠例外",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "335",
+      "displayNumber": "335",
+      "topic": "裁判",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "336",
+      "displayNumber": "336",
+      "topic": "裁判",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "337",
+      "displayNumber": "337",
+      "topic": "裁判",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "338",
+      "displayNumber": "338",
+      "topic": "裁判",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "339",
+      "displayNumber": "339",
+      "topic": "裁判",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "373",
+      "displayNumber": "373",
+      "topic": "控訴・上告",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "379",
+      "displayNumber": "379",
+      "topic": "控訴・上告",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "380",
+      "displayNumber": "380",
+      "topic": "控訴・上告",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "381",
+      "displayNumber": "381",
+      "topic": "控訴・上告",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "382",
+      "displayNumber": "382",
+      "topic": "控訴・上告",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "397",
+      "displayNumber": "397",
+      "topic": "控訴・上告",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "400",
+      "displayNumber": "400",
+      "topic": "控訴・上告",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "402",
+      "displayNumber": "402",
+      "topic": "控訴・上告",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "405",
+      "displayNumber": "405",
+      "topic": "控訴・上告",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "411",
+      "displayNumber": "411",
+      "topic": "控訴・上告",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "435",
+      "displayNumber": "435",
+      "topic": "再審",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "448",
+      "displayNumber": "448",
+      "topic": "再審",
+      "essayPriority": "B",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    },
+    {
+      "routeNumber": "452",
+      "displayNumber": "452",
+      "topic": "再審",
+      "essayPriority": "A",
+      "preliminaryShortPriority": "A",
+      "selectionReason": "既存重要条文版収録"
+    }
+  ]
+}

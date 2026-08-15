@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "revisionId": "323AC0000000131_20260813_508AC0000000067",
+  "source": {
+    "provider": "e-Gov法令API Version 2",
+    "sourceUrl": "https://laws.e-gov.go.jp/law/323AC0000000131",
+    "apiUrl": "https://laws.e-gov.go.jp/api/2/law_file/xml/323AC0000000131_20260813_508AC0000000067",
+    "verifiedAt": "2026-08-15"
+  },
+  "article": {
+    "id": "jp-323AC0000000131-a256",
+    "num": "256",
+    "routeNum": "256",
+    "displayNumber": "第二百五十六条",
+    "officialCaption": null,
+    "path": [
+      "第二編　第一審",
+      "第二章　公訴"
+    ],
+    "order": 311,
+    "paragraphs": [
+      {
+        "id": "jp-323AC0000000131-a256-p1",
+        "noteTargetId": "jp-323AC0000000131-a256-p1",
+        "num": "1",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a256-p1-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "公訴の提起は、起訴状を提出してこれをしなければならない。"
+                }
+              ],
+              "plainText": "公訴の提起は、起訴状を提出してこれをしなければならない。"
+            }
+          }
+        ],
+        "plainText": "公訴の提起は、起訴状を提出してこれをしなければならない。"
+      },
+      {
+        "id": "jp-323AC0000000131-a256-p2",
+        "noteTargetId": "jp-323AC0000000131-a256-p2-intro",
+        "num": "2",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a256-p2-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "起訴状には、左の事項を記載しなければならない。"
+                }
+              ],
+              "plainText": "起訴状には、左の事項を記載しなければならない。"
+            }
+          },
+          {
+            "kind": "item",
+            "item": {
+              "id": "jp-323AC0000000131-a256-p2-i1",
+              "num": "1",
+              "titleText": "一",
+              "blocks": [
+                {
+                  "kind": "sentence",
+                  "sentence": {
+                    "id": "jp-323AC0000000131-a256-p2-i1-sentence-1",
+                    "inline": [
+                      {
+                        "type": "text",
+                        "text": "被告人の氏名その他被告人を特定するに足りる事項"
+                      }
+                    ],
+                    "plainText": "被告人の氏名その他被告人を特定するに足りる事項"
+                  }
+                }
+              ],
+              "plainText": "被告人の氏名その他被告人を特定するに足りる事項"
+            }
+          },
+          {
+            "kind": "item",
+            "item": {
+              "id": "jp-323AC0000000131-a256-p2-i2",
+              "num": "2",
+              "titleText": "二",
+              "blocks": [
+                {
+                  "kind": "sentence",
+                  "sentence": {
+                    "id": "jp-323AC0000000131-a256-p2-i2-sentence-1",
+                    "inline": [
+                      {
+                        "type": "text",
+                        "text": "公訴事実"
+                      }
+                    ],
+                    "plainText": "公訴事実"
+                  }
+                }
+              ],
+              "plainText": "公訴事実"
+            }
+          },
+          {
+            "kind": "item",
+            "item": {
+              "id": "jp-323AC0000000131-a256-p2-i3",
+              "num": "3",
+              "titleText": "三",
+              "blocks": [
+                {
+                  "kind": "sentence",
+                  "sentence": {
+                    "id": "jp-323AC0000000131-a256-p2-i3-sentence-1",
+                    "inline": [
+                      {
+                        "type": "text",
+                        "text": "罪名"
+                      }
+                    ],
+                    "plainText": "罪名"
+                  }
+                }
+              ],
+              "plainText": "罪名"
+            }
+          }
+        ],
+        "plainText": "起訴状には、左の事項を記載しなければならない。一被告人の氏名その他被告人を特定するに足りる事項二公訴事実三罪名"
+      },
+      {
+        "id": "jp-323AC0000000131-a256-p3",
+        "noteTargetId": "jp-323AC0000000131-a256-p3",
+        "num": "3",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a256-p3-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "公訴事実は、訴因を明示してこれを記載しなければならない。"
+                }
+              ],
+              "plainText": "公訴事実は、訴因を明示してこれを記載しなければならない。"
+            }
+          },
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a256-p3-sentence-2",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "訴因を明示するには、できる限り日時、場所及び方法を以て罪となるべき事実を特定してこれをしなければならない。"
+                }
+              ],
+              "plainText": "訴因を明示するには、できる限り日時、場所及び方法を以て罪となるべき事実を特定してこれをしなければならない。"
+            }
+          }
+        ],
+        "plainText": "公訴事実は、訴因を明示してこれを記載しなければならない。訴因を明示するには、できる限り日時、場所及び方法を以て罪となるべき事実を特定してこれをしなければならない。"
+      },
+      {
+        "id": "jp-323AC0000000131-a256-p4",
+        "noteTargetId": "jp-323AC0000000131-a256-p4",
+        "num": "4",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a256-p4-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "罪名は、適用すべき罰条を示してこれを記載しなければならない。"
+                }
+              ],
+              "plainText": "罪名は、適用すべき罰条を示してこれを記載しなければならない。"
+            }
+          },
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a256-p4-sentence-2",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "但し、罰条の記載の誤は、被告人の防禦に実質的な不利益を生ずる虞がない限り、公訴提起の効力に影響を及ぼさない。"
+                }
+              ],
+              "plainText": "但し、罰条の記載の誤は、被告人の防禦に実質的な不利益を生ずる虞がない限り、公訴提起の効力に影響を及ぼさない。"
+            }
+          }
+        ],
+        "plainText": "罪名は、適用すべき罰条を示してこれを記載しなければならない。但し、罰条の記載の誤は、被告人の防禦に実質的な不利益を生ずる虞がない限り、公訴提起の効力に影響を及ぼさない。"
+      },
+      {
+        "id": "jp-323AC0000000131-a256-p5",
+        "noteTargetId": "jp-323AC0000000131-a256-p5",
+        "num": "5",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a256-p5-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "数個の訴因及び罰条は、予備的に又は択一的にこれを記載することができる。"
+                }
+              ],
+              "plainText": "数個の訴因及び罰条は、予備的に又は択一的にこれを記載することができる。"
+            }
+          }
+        ],
+        "plainText": "数個の訴因及び罰条は、予備的に又は択一的にこれを記載することができる。"
+      },
+      {
+        "id": "jp-323AC0000000131-a256-p6",
+        "noteTargetId": "jp-323AC0000000131-a256-p6",
+        "num": "6",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a256-p6-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "起訴状には、裁判官に事件につき予断を生ぜしめる虞のある書類その他の物を添附し、又はその内容を引用してはならない。"
+                }
+              ],
+              "plainText": "起訴状には、裁判官に事件につき予断を生ぜしめる虞のある書類その他の物を添附し、又はその内容を引用してはならない。"
+            }
+          }
+        ],
+        "plainText": "起訴状には、裁判官に事件につき予断を生ぜしめる虞のある書類その他の物を添附し、又はその内容を引用してはならない。"
+      }
+    ],
+    "plainText": "第二百五十六条公訴の提起は、起訴状を提出してこれをしなければならない。起訴状には、左の事項を記載しなければならない。一被告人の氏名その他被告人を特定するに足りる事項二公訴事実三罪名公訴事実は、訴因を明示してこれを記載しなければならない。訴因を明示するには、できる限り日時、場所及び方法を以て罪となるべき事実を特定してこれをしなければならない。罪名は、適用すべき罰条を示してこれを記載しなければならない。但し、罰条の記載の誤は、被告人の防禦に実質的な不利益を生ずる虞がない限り、公訴提起の効力に影響を及ぼさない。数個の訴因及び罰条は、予備的に又は択一的にこれを記載することができる。起訴状には、裁判官に事件につき予断を生ぜしめる虞のある書類その他の物を添附し、又はその内容を引用してはならない。"
+  }
+}

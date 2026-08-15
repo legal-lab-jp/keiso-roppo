@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "87",
+  "articleId": "jp-323AC0000000131-a87",
+  "study": {
+    "title": "勾留の取消し",
+    "topic": "勾留",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "理由と必要を区別",
+    "oneLine": "勾留理由又は勾留の必要が消滅したとき、請求又は職権により勾留を取り消します。",
+    "trigger": "罪証隠滅・逃亡のおそれが弱まった、審理の進行等により身体拘束継続の必要がなくなった場面。",
+    "overview": "適法に始まった勾留でも、その基礎となる理由又は必要性が後に失われれば継続できません。本条は継続的な身体拘束審査を制度化します。",
+    "learning": {
+      "remember": "勾留理由又は勾留必要の消滅、請求又は職権、必要的取消し。",
+      "understand": "60条の理由がなくなる場合と、理由は残るが拘束の必要がなくなる場合を分けること。",
+      "lookup": "請求権者の列挙と2項の準用は条文で確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a87-p1",
+        "label": "第87条第1項",
+        "studyTitle": "要件と効果",
+        "purpose": "勾留の正当化根拠が失われた後も身体拘束が続くことを防ぎます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a87-p1-s01",
+            "role": "requirement",
+            "tag": "消滅",
+            "text": "勾留の理由又は勾留の必要がなくなつたときは、"
+          },
+          {
+            "id": "jp-323AC0000000131-a87-p1-s02",
+            "role": "actor",
+            "tag": "主体",
+            "text": "裁判所は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a87-p1-s03",
+            "role": "requirement",
+            "tag": "開始",
+            "text": "検察官、勾留されている被告人若しくはその弁護人、法定代理人、保佐人、配偶者、直系の親族若しくは兄弟姉妹の請求により、又は職権で、"
+          },
+          {
+            "id": "jp-323AC0000000131-a87-p1-s04",
+            "role": "effect",
+            "tag": "必要的取消し",
+            "text": "決定を以て勾留を取り消さなければならない。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a87-p2",
+        "label": "第87条第2項",
+        "studyTitle": "参照",
+        "purpose": "身体拘束の解消等により請求の必要がなくなった場合の失効を、理由開示請求と同様に扱います。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a87-p2-s01",
+            "role": "effect",
+            "tag": "準用",
+            "text": "第八十二条第三項の規定は、前項の請求についてこれを準用する。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "60",
+        "displayNumber": "60",
+        "available": true
+      },
+      {
+        "routeNumber": "82",
+        "displayNumber": "82",
+        "available": true
+      },
+      {
+        "routeNumber": "88",
+        "displayNumber": "88",
+        "available": true
+      }
+    ]
+  }
+}

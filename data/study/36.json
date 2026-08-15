@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "36",
+  "articleId": "jp-323AC0000000131-a36",
+  "study": {
+    "title": "被告人の請求による国選弁護",
+    "topic": "弁護",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "B"
+    },
+    "loadLabel": "理解",
+    "oneLine": "貧困等で私選弁護人を選べない被告人について、請求により国選弁護人を付します。",
+    "trigger": "起訴後の被告人が資力等の事情で私選弁護人を選任できず、国選弁護人を求める場面。",
+    "overview": "弁護人選任権を資力の有無で空文化させないための制度です。要件を満たす請求があれば、裁判所は弁護人を付さなければなりません。",
+    "learning": {
+      "remember": "被告人・貧困その他・選任不能・請求・裁判所の必要的選任。",
+      "understand": "私選弁護人が既にいれば、国選で補う必要がないというただし書。",
+      "lookup": "資力申告書や弁護士会への事前申出は36条の2・36条の3で確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a36-p1",
+        "label": "第36条",
+        "studyTitle": "要件と効果",
+        "purpose": "経済的事情等により私選弁護を利用できない被告人にも、実質的な防御権を確保します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a36-p1-s01",
+            "role": "requirement",
+            "tag": "選任不能",
+            "text": "被告人が貧困その他の事由により弁護人を選任することができないときは、"
+          },
+          {
+            "id": "jp-323AC0000000131-a36-p1-s02",
+            "role": "actor",
+            "tag": "主体",
+            "text": "裁判所は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a36-p1-s03",
+            "role": "requirement",
+            "tag": "請求",
+            "text": "その請求により、"
+          },
+          {
+            "id": "jp-323AC0000000131-a36-p1-s04",
+            "role": "effect",
+            "tag": "必要的選任",
+            "text": "被告人のため弁護人を附しなければならない。"
+          },
+          {
+            "id": "jp-323AC0000000131-a36-p1-s05",
+            "role": "limit",
+            "tag": "例外",
+            "text": "但し、被告人以外の者が選任した弁護人がある場合は、この限りでない。"
+          }
+        ]
+      }
+    ],
+    "omitted": "36条の2・36条の3の資力申告等は、論文で直接使うことが少ないため本編から外し、短答補充候補とします。",
+    "related": [
+      {
+        "routeNumber": "30",
+        "displayNumber": "30",
+        "available": true
+      },
+      {
+        "routeNumber": "37",
+        "displayNumber": "37",
+        "available": true
+      },
+      {
+        "routeNumber": "37-2",
+        "displayNumber": "37の2",
+        "available": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "289",
+  "articleId": "jp-323AC0000000131-a289",
+  "study": {
+    "title": "必要的弁護",
+    "topic": "公判手続",
+    "priority": {
+      "essay": "A",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "重大事件の弁護人",
+    "oneLine": "重大事件では弁護人なしの開廷を許さず、欠缺時には裁判長が職権で弁護人を付します。",
+    "trigger": "重大事件の公判で弁護人がいない、出頭しない、又は途中で在廷しなくなった場合を処理するとき。",
+    "overview": "刑が重く防御の専門性が特に必要な事件について、弁護人の在廷を開廷の必須条件とします。1項が必要的弁護事件の範囲と開廷禁止を、2項が弁護人欠缺時の職権選任を定め、実効的な防御を制度として保障します。",
+    "learning": {
+      "remember": "死刑・無期又は長期3年を超える拘禁刑の事件は、弁護人がなければ開廷できません。",
+      "understand": "本人の希望に委ねるのではなく、重大事件の適正な審理そのものの条件として弁護を保障する制度です。",
+      "lookup": "国選弁護人の一般的な選任要件は36条・37条、接見交通は39条と切り分けます。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a289-p1",
+        "label": "第289条第1項",
+        "studyTitle": "必要的弁護事件",
+        "purpose": "重大事件について専門的な防御を不可欠とし、弁護人不在のまま公判が進むことを防ぎます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a289-p1-s01",
+            "role": "requirement",
+            "tag": "重大事件",
+            "text": "死刑又は無期若しくは長期三年を超える拘禁刑に当たる事件を審理する場合には、"
+          },
+          {
+            "id": "jp-323AC0000000131-a289-p1-s02",
+            "role": "requirement",
+            "tag": "弁護人なし",
+            "text": "弁護人がなければ"
+          },
+          {
+            "id": "jp-323AC0000000131-a289-p1-s03",
+            "role": "effect",
+            "tag": "開廷禁止",
+            "text": "開廷することはできない。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a289-p2",
+        "label": "第289条第2項",
+        "studyTitle": "職権による弁護人選任",
+        "purpose": "弁護人の欠缺により公判が進められない場合に、裁判長の職権選任で防御保障と手続進行を両立させます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a289-p2-s01",
+            "role": "requirement",
+            "tag": "必要的弁護事件",
+            "text": "弁護人がなければ開廷することができない場合において、"
+          },
+          {
+            "id": "jp-323AC0000000131-a289-p2-s02",
+            "role": "requirement",
+            "tag": "不出頭・不在・欠缺",
+            "text": "弁護人が出頭しないとき若しくは在廷しなくなつたとき、又は弁護人がないときは、"
+          },
+          {
+            "id": "jp-323AC0000000131-a289-p2-s03",
+            "role": "actor",
+            "tag": "裁判長",
+            "text": "裁判長は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a289-p2-s04",
+            "role": "effect",
+            "tag": "職権選任",
+            "text": "職権で弁護人を付さなければならない。"
+          }
+        ]
+      }
+    ],
+    "omitted": "第3項の弁護人不出頭のおそれがある場合の予防的な職権選任は、短答上の周辺事項として今回は省略します。",
+    "related": [
+      {
+        "routeNumber": "36",
+        "displayNumber": "36",
+        "available": true
+      },
+      {
+        "routeNumber": "37",
+        "displayNumber": "37",
+        "available": true
+      },
+      {
+        "routeNumber": "282",
+        "displayNumber": "282",
+        "available": true
+      },
+      {
+        "routeNumber": "286",
+        "displayNumber": "286",
+        "available": true
+      },
+      {
+        "routeNumber": "291",
+        "displayNumber": "291",
+        "available": true
+      }
+    ]
+  }
+}

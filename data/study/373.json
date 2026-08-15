@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "373",
+  "articleId": "jp-323AC0000000131-a373",
+  "study": {
+    "title": "控訴の提起期間",
+    "topic": "控訴・上告",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "十四日の不変期間",
+    "oneLine": "第一審判決に対する控訴は、法定の十四日以内に提起します。",
+    "trigger": "第一審判決に不服があり、控訴申立てが期間内かを最初に確認するとき。",
+    "overview": "控訴審による審査を求める入口として、控訴の提起期間を十四日と定めます。控訴理由を検討する前に、申立てが期間を徒過していないかを確認するための条文です。",
+    "learning": {
+      "remember": "控訴の提起期間は十四日です。",
+      "understand": "実体的な控訴理由があっても、適法な期間内に控訴を提起しなければ控訴審の審査へ進めません。",
+      "lookup": "期間の起算・計算や上訴権回復の要件は、具体的な日付計算が問題となったときに関連条文を確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a373-p1",
+        "label": "第373条",
+        "studyTitle": "控訴期間",
+        "purpose": "判決の確定時期と上訴の可否を早期に明確にし、刑事手続の安定を図ります。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a373-p1-s01",
+            "role": "requirement",
+            "tag": "控訴の提起期間",
+            "text": "控訴の提起期間は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a373-p1-s02",
+            "role": "effect",
+            "tag": "十四日",
+            "text": "十四日とする。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "379",
+        "displayNumber": "379",
+        "available": true
+      },
+      {
+        "routeNumber": "380",
+        "displayNumber": "380",
+        "available": true
+      },
+      {
+        "routeNumber": "381",
+        "displayNumber": "381",
+        "available": true
+      },
+      {
+        "routeNumber": "382",
+        "displayNumber": "382",
+        "available": true
+      },
+      {
+        "routeNumber": "397",
+        "displayNumber": "397",
+        "available": true
+      },
+      {
+        "routeNumber": "402",
+        "displayNumber": "402",
+        "available": true
+      }
+    ]
+  }
+}

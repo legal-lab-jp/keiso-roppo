@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "213",
+  "articleId": "jp-323AC0000000131-a213",
+  "study": {
+    "title": "現行犯人の無令状逮捕",
+    "topic": "逮捕",
+    "priority": {
+      "essay": "A",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "効果を確認",
+    "oneLine": "212条の現行犯人については、捜査機関に限らず誰でも逮捕状なしで逮捕できると定めます。",
+    "trigger": "警察官以外の私人が現行犯人を取り押さえた場合や、警察官による無令状逮捕の根拠を確認するとき。",
+    "overview": "犯罪と犯人が明白で急速な逮捕が必要な現行犯について、令状主義の例外を認めます。逮捕権者を捜査機関に限らず「何人でも」とする点が重要です。",
+    "learning": {
+      "remember": "現行犯人は「何人でも」「逮捕状なくして」逮捕できること。",
+      "understand": "213条だけでなく、まず212条の現行犯人・準現行犯人の要件を満たす必要があること。",
+      "lookup": "私人が逮捕した後の捜査機関への引渡しは214条、軽微事件の制限は217条で確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a213-p1",
+        "label": "第213条",
+        "studyTitle": "原則",
+        "purpose": "犯行と犯人が明白な緊急場面で、令状取得を待たずに身柄を確保できるようにします。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a213-p1-s01",
+            "role": "requirement",
+            "tag": "現行犯人",
+            "text": "現行犯人は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a213-p1-s02",
+            "role": "actor",
+            "tag": "逮捕権者",
+            "text": "何人でも、"
+          },
+          {
+            "id": "jp-323AC0000000131-a213-p1-s03",
+            "role": "effect",
+            "tag": "無令状逮捕",
+            "text": "逮捕状なくしてこれを逮捕することができる。"
+          }
+        ]
+      }
+    ],
+    "omitted": "214条から216条の私人逮捕後の引渡し・司法巡査の引致・通常逮捕後規定の準用は、手続の流れとして理解し、本文収録は省略します。",
+    "related": [
+      {
+        "routeNumber": "212",
+        "displayNumber": "212",
+        "available": true
+      },
+      {
+        "routeNumber": "217",
+        "displayNumber": "217",
+        "available": true
+      },
+      {
+        "routeNumber": "203",
+        "displayNumber": "203",
+        "available": true
+      }
+    ]
+  }
+}

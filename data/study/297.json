@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "297",
+  "articleId": "jp-323AC0000000131-a297",
+  "study": {
+    "title": "証拠調べの範囲・順序・方法",
+    "topic": "証拠調べ・証拠総則",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "証拠調べの設計",
+    "oneLine": "裁判所が当事者の意見を聴き、証拠調べの範囲・順序・方法を定め、必要に応じて変更できます。",
+    "trigger": "多数の証拠をどの範囲・順序・方法で取り調べるか、いったん定めた計画を変更できるかを確認するとき。",
+    "overview": "裁判所が当事者の意見を踏まえて証拠調べを計画し、公判の進行に応じて柔軟に変更できるようにします。裁判所の訴訟指揮と、当事者の立証・防御上の意見を接続する規定です。",
+    "learning": {
+      "remember": "裁判所は当事者の意見を聴き、範囲・順序・方法を定め、適当と認めるときはいつでも変更できます。",
+      "understand": "審理の効率性だけでなく、当事者に意見を述べさせることで公正な立証機会を確保します。",
+      "lookup": "個別の取調べ方法は、人証304条、証拠書類305条、証拠物306条を確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a297-p1",
+        "label": "第297条第1項",
+        "studyTitle": "証拠調べ計画の設定",
+        "purpose": "争点と証拠の状況に応じて、公正で効率的な証拠調べの計画を定めます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a297-p1-s01",
+            "role": "actor",
+            "tag": "裁判所",
+            "text": "裁判所は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a297-p1-s02",
+            "role": "requirement",
+            "tag": "当事者の意見聴取",
+            "text": "検察官及び被告人又は弁護人の意見を聴き、"
+          },
+          {
+            "id": "jp-323AC0000000131-a297-p1-s03",
+            "role": "effect",
+            "tag": "範囲・順序・方法を決定",
+            "text": "証拠調の範囲、順序及び方法を定めることができる。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a297-p3",
+        "label": "第297条第3項",
+        "studyTitle": "証拠調べ計画の変更",
+        "purpose": "公判の進行や立証状況の変化に応じ、意見聴取を経て証拠調べ計画を調整できるようにします。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a297-p3-s01",
+            "role": "actor",
+            "tag": "裁判所",
+            "text": "裁判所は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a297-p3-s02",
+            "role": "requirement",
+            "tag": "適当と認めるとき・いつでも",
+            "text": "適当と認めるときは、何時でも、"
+          },
+          {
+            "id": "jp-323AC0000000131-a297-p3-s03",
+            "role": "requirement",
+            "tag": "当事者の意見聴取",
+            "text": "検察官及び被告人又は弁護人の意見を聴き、"
+          },
+          {
+            "id": "jp-323AC0000000131-a297-p3-s04",
+            "role": "effect",
+            "tag": "計画変更",
+            "text": "第一項の規定により定めた証拠調の範囲、順序又は方法を変更することができる。"
+          }
+        ]
+      }
+    ],
+    "omitted": "第2項の合議体構成員への設定権限の委任は、裁判体内部の事務処理に関する規定として省略します。",
+    "related": [
+      {
+        "routeNumber": "294",
+        "displayNumber": "294",
+        "available": true
+      },
+      {
+        "routeNumber": "296",
+        "displayNumber": "296",
+        "available": true
+      },
+      {
+        "routeNumber": "298",
+        "displayNumber": "298",
+        "available": true
+      },
+      {
+        "routeNumber": "304",
+        "displayNumber": "304",
+        "available": true
+      },
+      {
+        "routeNumber": "305",
+        "displayNumber": "305",
+        "available": true
+      },
+      {
+        "routeNumber": "306",
+        "displayNumber": "306",
+        "available": true
+      }
+    ]
+  }
+}

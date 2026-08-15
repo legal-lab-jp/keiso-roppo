@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "30",
+  "articleId": "jp-323AC0000000131-a30",
+  "study": {
+    "title": "私選弁護人の選任",
+    "topic": "弁護",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "中核文言",
+    "oneLine": "被告人・被疑者本人と一定の身近な者に、弁護人を選任する権限を認めます。",
+    "trigger": "誰が、いつ弁護人を選任できるか、本人の意思とは別に親族等が選任できるかを確認するとき。",
+    "overview": "弁護人の援助を受ける機会を早期から確保するため、本人はいつでも選任でき、法定代理人や一定の親族等にも独立した選任権を認めています。",
+    "learning": {
+      "remember": "本人は「何時でも」。2項の者は本人とは独立して選任できます。",
+      "understand": "身柄拘束や本人の判断状況に左右されず、弁護の入口を複線化していること。",
+      "lookup": "2項の列挙者は短答時に正確に確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a30-p1",
+        "label": "第30条第1項",
+        "studyTitle": "覚える",
+        "purpose": "被告人・被疑者本人に、手続のどの段階でも私選弁護人を選任できることを保障します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a30-p1-s01",
+            "role": "actor",
+            "tag": "主体",
+            "text": "被告人又は被疑者は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a30-p1-s02",
+            "role": "requirement",
+            "tag": "時期",
+            "text": "何時でも"
+          },
+          {
+            "id": "jp-323AC0000000131-a30-p1-s03",
+            "role": "effect",
+            "tag": "権利",
+            "text": "弁護人を選任することができる。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a30-p2",
+        "label": "第30条第2項",
+        "studyTitle": "短答まで",
+        "purpose": "本人が動けない場合にも弁護人を確保できるよう、一定の身分関係者に独立の選任権を与えます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a30-p2-s01",
+            "role": "actor",
+            "tag": "主体",
+            "text": "被告人又は被疑者の法定代理人、保佐人、配偶者、直系の親族及び兄弟姉妹は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a30-p2-s02",
+            "role": "effect",
+            "tag": "独立権限",
+            "text": "独立して弁護人を選任することができる。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "36",
+        "displayNumber": "36",
+        "available": true
+      },
+      {
+        "routeNumber": "37-2",
+        "displayNumber": "37の2",
+        "available": true
+      },
+      {
+        "routeNumber": "39",
+        "displayNumber": "39",
+        "available": true
+      }
+    ]
+  }
+}

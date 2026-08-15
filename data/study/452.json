@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "452",
+  "articleId": "jp-323AC0000000131-a452",
+  "study": {
+    "title": "再審の不利益変更禁止",
+    "topic": "再審",
+    "priority": {
+      "essay": "A",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "原判決より重い刑の禁止",
+    "oneLine": "再審では、原判決より重い刑を言い渡すことができません。",
+    "trigger": "有罪確定判決について再審が開始された後、再審判決で原判決より重い刑を科せるかを確認するとき。",
+    "overview": "本人の利益のために開始される再審で、原判決より重い刑が言い渡されることを禁止します。再審請求によって処罰が重くなる危険をなくし、誤判救済制度としての性格を確保します。",
+    "learning": {
+      "remember": "再審では、原判決より重い刑は言い渡せません。",
+      "understand": "再審を誤判からの利益救済として機能させるための不利益変更禁止です。",
+      "lookup": "控訴審の不利益変更禁止は402条です。本欄も改正法施行後の条番号・内容を再確認してください。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a452-p1",
+        "label": "第452条",
+        "studyTitle": "再審の不利益変更禁止",
+        "purpose": "誤判救済を求めた者が再審により一層重い刑を受ける危険を排除します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a452-p1-s01",
+            "role": "limit",
+            "tag": "再審",
+            "text": "再審においては、"
+          },
+          {
+            "id": "jp-323AC0000000131-a452-p1-s02",
+            "role": "effect",
+            "tag": "重い刑を禁止",
+            "text": "原判決の刑より重い刑を言い渡すことはできない。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "402",
+        "displayNumber": "402",
+        "available": true
+      },
+      {
+        "routeNumber": "435",
+        "displayNumber": "435",
+        "available": true
+      },
+      {
+        "routeNumber": "448",
+        "displayNumber": "448",
+        "available": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "380",
+  "articleId": "jp-323AC0000000131-a380",
+  "study": {
+    "title": "法令適用の誤り",
+    "topic": "控訴・上告",
+    "priority": {
+      "essay": "A",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "適用誤り＋判決への影響",
+    "oneLine": "法令適用の誤りを控訴理由とするには、その誤りが判決に影響することが明らかである必要があります。",
+    "trigger": "認定事実に対する犯罪成立、法条、刑の加重減免等の法律適用が誤っていると主張するとき。",
+    "overview": "原判決の法令適用に誤りがあるだけでなく、それが判決に明らかに影響することを控訴理由の要件とします。控訴趣意書では、適用の誤りと判決への影響を特定して示します。",
+    "learning": {
+      "remember": "法令適用の誤り＋判決への影響が明らか、の二段階です。",
+      "understand": "認定事実を前提に、どの法令をどう適用すべきかという法的評価を争う控訴理由です。",
+      "lookup": "証拠調べ等の手続違反は379条、認定事実そのものの誤りは382条と区別します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a380-p1",
+        "label": "第380条",
+        "studyTitle": "法令適用の誤り",
+        "purpose": "判決の結論に影響する法律判断の誤りを是正し、控訴趣意を具体化させます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a380-p1-s01",
+            "role": "requirement",
+            "tag": "法令適用の誤り＋明白な影響",
+            "text": "法令の適用に誤があつてその誤が判決に影響を及ぼすことが明らかであることを理由として控訴の申立をした場合には、"
+          },
+          {
+            "id": "jp-323AC0000000131-a380-p1-s02",
+            "role": "effect",
+            "tag": "誤りと影響を表示",
+            "text": "控訴趣意書に、その誤及びその誤が明らかに判決に影響を及ぼすべきことを示さなければならない。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "373",
+        "displayNumber": "373",
+        "available": true
+      },
+      {
+        "routeNumber": "397",
+        "displayNumber": "397",
+        "available": true
+      },
+      {
+        "routeNumber": "400",
+        "displayNumber": "400",
+        "available": true
+      }
+    ]
+  }
+}

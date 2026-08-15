@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "201",
+  "articleId": "jp-323AC0000000131-a201",
+  "study": {
+    "title": "逮捕状の呈示",
+    "topic": "逮捕",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "原則と例外",
+    "oneLine": "通常逮捕では逮捕状の呈示を原則とし、急速を要する令状不所持時の例外を準用します。",
+    "trigger": "逮捕時に逮捕状を見せなかった、執行者が令状を携帯していなかったという事案。",
+    "overview": "被疑者に身柄拘束の法的根拠と範囲を知らせ、令状の存在を確認できるようにします。急速を要して令状を所持していない場合は、73条3項の要件の下で例外的に執行できます。",
+    "learning": {
+      "remember": "原則は逮捕状を被疑者に示すこと。例外は令状不所持かつ急速を要する場合の73条3項準用です。",
+      "understand": "令状が発付されていない無令状逮捕ではなく、発付済みだが手元にない場合の執行例外であること。",
+      "lookup": "例外時の告知内容と、その後できる限り速やかに呈示する点は、準用先の73条3項で確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a201-p1",
+        "label": "第201条第1項",
+        "studyTitle": "原則",
+        "purpose": "被疑者に逮捕の司法的根拠を示し、令状に基づく拘束であることを確認可能にします。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a201-p1-s01",
+            "role": "requirement",
+            "tag": "逮捕状による逮捕",
+            "text": "逮捕状により被疑者を逮捕するには、"
+          },
+          {
+            "id": "jp-323AC0000000131-a201-p1-s02",
+            "role": "effect",
+            "tag": "呈示義務",
+            "text": "逮捕状を被疑者に示さなければならない。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a201-p2",
+        "label": "第201条第2項",
+        "studyTitle": "例外の位置",
+        "purpose": "急速を要し令状を所持できない場合にも、発付済み令状の執行を可能にします。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a201-p2-s01",
+            "role": "actor",
+            "tag": "準用元",
+            "text": "第七十三条第三項の規定は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a201-p2-s02",
+            "role": "requirement",
+            "tag": "対象場面",
+            "text": "逮捕状により被疑者を逮捕する場合に"
+          },
+          {
+            "id": "jp-323AC0000000131-a201-p2-s03",
+            "role": "effect",
+            "tag": "準用",
+            "text": "これを準用する。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "199",
+        "displayNumber": "199",
+        "available": true
+      },
+      {
+        "routeNumber": "200",
+        "displayNumber": "200",
+        "available": true
+      },
+      {
+        "routeNumber": "203",
+        "displayNumber": "203",
+        "available": true
+      }
+    ]
+  }
+}

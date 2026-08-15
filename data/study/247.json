@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "247",
+  "articleId": "jp-323AC0000000131-a247",
+  "study": {
+    "title": "検察官による公訴提起",
+    "topic": "公訴・訴因",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "起訴独占",
+    "oneLine": "公訴を提起する権限を検察官に帰属させる、国家訴追主義・起訴独占主義の基本条文です。",
+    "trigger": "誰が刑事裁判を開始できるのか、私人訴追が許されるかを確認するとき。",
+    "overview": "国家を代表する検察官に公訴提起を委ね、訴追判断と公判維持を統一します。246条が事件を検察官へ集め、247条が起訴権者を定め、248条がその裁量を定める、という三条の接続で覚えます。",
+    "learning": {
+      "remember": "公訴は検察官が行う、という一文です。",
+      "understand": "国家訴追主義と起訴独占主義の根拠であり、248条の起訴便宜主義とは別の問いであること。",
+      "lookup": "付審判請求や検察審査会の起訴議決に伴う例外的制度は、問われたときに個別法を確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a247-p1",
+        "label": "第247条",
+        "studyTitle": "起訴権者",
+        "purpose": "刑事訴追を公的機関である検察官に集中させ、統一的・公益的な訴追判断を確保します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a247-p1-s01",
+            "role": "actor",
+            "tag": "対象行為",
+            "text": "公訴は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a247-p1-s02",
+            "role": "actor",
+            "tag": "権限主体",
+            "text": "検察官が"
+          },
+          {
+            "id": "jp-323AC0000000131-a247-p1-s03",
+            "role": "effect",
+            "tag": "公訴を行う",
+            "text": "これを行う。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "246",
+        "displayNumber": "246",
+        "available": true
+      },
+      {
+        "routeNumber": "248",
+        "displayNumber": "248",
+        "available": true
+      },
+      {
+        "routeNumber": "256",
+        "displayNumber": "256",
+        "available": true
+      }
+    ]
+  }
+}

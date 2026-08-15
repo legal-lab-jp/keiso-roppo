@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "revisionId": "323AC0000000131_20260813_508AC0000000067",
+  "source": {
+    "provider": "e-Gov法令API Version 2",
+    "sourceUrl": "https://laws.e-gov.go.jp/law/323AC0000000131",
+    "apiUrl": "https://laws.e-gov.go.jp/api/2/law_file/xml/323AC0000000131_20260813_508AC0000000067",
+    "verifiedAt": "2026-08-15"
+  },
+  "article": {
+    "id": "jp-323AC0000000131-a339",
+    "num": "339",
+    "routeNum": "339",
+    "displayNumber": "第三百三十九条",
+    "officialCaption": null,
+    "path": [
+      "第二編　第一審",
+      "第三章　公判",
+      "第五節　公判の裁判"
+    ],
+    "order": 469,
+    "paragraphs": [
+      {
+        "id": "jp-323AC0000000131-a339-p1",
+        "noteTargetId": "jp-323AC0000000131-a339-p1-intro",
+        "num": "1",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a339-p1-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "左の場合には、決定で公訴を棄却しなければならない。"
+                }
+              ],
+              "plainText": "左の場合には、決定で公訴を棄却しなければならない。"
+            }
+          },
+          {
+            "kind": "item",
+            "item": {
+              "id": "jp-323AC0000000131-a339-p1-i1",
+              "num": "1",
+              "titleText": "一",
+              "blocks": [
+                {
+                  "kind": "sentence",
+                  "sentence": {
+                    "id": "jp-323AC0000000131-a339-p1-i1-sentence-1",
+                    "inline": [
+                      {
+                        "type": "text",
+                        "text": "第二百七十一条第二項の規定により公訴の提起がその効力を失つたとき。"
+                      }
+                    ],
+                    "plainText": "第二百七十一条第二項の規定により公訴の提起がその効力を失つたとき。"
+                  }
+                }
+              ],
+              "plainText": "第二百七十一条第二項の規定により公訴の提起がその効力を失つたとき。"
+            }
+          },
+          {
+            "kind": "item",
+            "item": {
+              "id": "jp-323AC0000000131-a339-p1-i2",
+              "num": "2",
+              "titleText": "二",
+              "blocks": [
+                {
+                  "kind": "sentence",
+                  "sentence": {
+                    "id": "jp-323AC0000000131-a339-p1-i2-sentence-1",
+                    "inline": [
+                      {
+                        "type": "text",
+                        "text": "起訴状に記載された事実が真実であつても、何らの罪となるべき事実を包含していないとき。"
+                      }
+                    ],
+                    "plainText": "起訴状に記載された事実が真実であつても、何らの罪となるべき事実を包含していないとき。"
+                  }
+                }
+              ],
+              "plainText": "起訴状に記載された事実が真実であつても、何らの罪となるべき事実を包含していないとき。"
+            }
+          },
+          {
+            "kind": "item",
+            "item": {
+              "id": "jp-323AC0000000131-a339-p1-i3",
+              "num": "3",
+              "titleText": "三",
+              "blocks": [
+                {
+                  "kind": "sentence",
+                  "sentence": {
+                    "id": "jp-323AC0000000131-a339-p1-i3-sentence-1",
+                    "inline": [
+                      {
+                        "type": "text",
+                        "text": "公訴が取り消されたとき。"
+                      }
+                    ],
+                    "plainText": "公訴が取り消されたとき。"
+                  }
+                }
+              ],
+              "plainText": "公訴が取り消されたとき。"
+            }
+          },
+          {
+            "kind": "item",
+            "item": {
+              "id": "jp-323AC0000000131-a339-p1-i4",
+              "num": "4",
+              "titleText": "四",
+              "blocks": [
+                {
+                  "kind": "sentence",
+                  "sentence": {
+                    "id": "jp-323AC0000000131-a339-p1-i4-sentence-1",
+                    "inline": [
+                      {
+                        "type": "text",
+                        "text": "被告人が死亡し、又は被告人たる法人が存続しなくなつたとき。"
+                      }
+                    ],
+                    "plainText": "被告人が死亡し、又は被告人たる法人が存続しなくなつたとき。"
+                  }
+                }
+              ],
+              "plainText": "被告人が死亡し、又は被告人たる法人が存続しなくなつたとき。"
+            }
+          },
+          {
+            "kind": "item",
+            "item": {
+              "id": "jp-323AC0000000131-a339-p1-i5",
+              "num": "5",
+              "titleText": "五",
+              "blocks": [
+                {
+                  "kind": "sentence",
+                  "sentence": {
+                    "id": "jp-323AC0000000131-a339-p1-i5-sentence-1",
+                    "inline": [
+                      {
+                        "type": "text",
+                        "text": "第十条又は第十一条の規定により審判してはならないとき。"
+                      }
+                    ],
+                    "plainText": "第十条又は第十一条の規定により審判してはならないとき。"
+                  }
+                }
+              ],
+              "plainText": "第十条又は第十一条の規定により審判してはならないとき。"
+            }
+          }
+        ],
+        "plainText": "左の場合には、決定で公訴を棄却しなければならない。一第二百七十一条第二項の規定により公訴の提起がその効力を失つたとき。二起訴状に記載された事実が真実であつても、何らの罪となるべき事実を包含していないとき。三公訴が取り消されたとき。四被告人が死亡し、又は被告人たる法人が存続しなくなつたとき。五第十条又は第十一条の規定により審判してはならないとき。"
+      },
+      {
+        "id": "jp-323AC0000000131-a339-p2",
+        "noteTargetId": "jp-323AC0000000131-a339-p2",
+        "num": "2",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a339-p2-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "前項の決定に対しては、即時抗告をすることができる。"
+                }
+              ],
+              "plainText": "前項の決定に対しては、即時抗告をすることができる。"
+            }
+          }
+        ],
+        "plainText": "前項の決定に対しては、即時抗告をすることができる。"
+      }
+    ],
+    "plainText": "第三百三十九条左の場合には、決定で公訴を棄却しなければならない。一第二百七十一条第二項の規定により公訴の提起がその効力を失つたとき。二起訴状に記載された事実が真実であつても、何らの罪となるべき事実を包含していないとき。三公訴が取り消されたとき。四被告人が死亡し、又は被告人たる法人が存続しなくなつたとき。五第十条又は第十一条の規定により審判してはならないとき。前項の決定に対しては、即時抗告をすることができる。"
+  }
+}

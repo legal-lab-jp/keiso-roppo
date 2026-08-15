@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "337",
+  "articleId": "jp-323AC0000000131-a337",
+  "study": {
+    "title": "免訴判決",
+    "topic": "裁判",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "訴追権消滅等",
+    "oneLine": "確定判決、刑の廃止、大赦又は公訴時効完成がある場合には、判決で免訴を言い渡します。",
+    "trigger": "犯罪成立の本案判断より前に、既判力・刑罰法令・大赦・公訴時効によって訴追を続けられないかを検討するとき。",
+    "overview": "有罪・無罪の本案判断とは別に、実体的な訴追権が消滅し又は確定判決によって再度の審判が許されない場合を免訴判決で終了させます。公訴提起手続の瑕疵等を扱う338・339条の公訴棄却と区別します。",
+    "learning": {
+      "remember": "確定判決／刑の廃止／大赦／時効完成の四つです。",
+      "understand": "犯罪の証明不足ではなく、確定判決や時効等により国家が当該事件を再び処罰・訴追できないことが理由です。",
+      "lookup": "公訴時効期間は250条、無罪は336条、公訴提起や手続の瑕疵は338・339条を確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a337-p1-intro",
+        "label": "第337条柱書",
+        "studyTitle": "免訴の裁判形式",
+        "purpose": "訴追権消滅等の法定事由がある事件を、判決によって終局させます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a337-p1-intro-s01",
+            "role": "requirement",
+            "tag": "各号の場合",
+            "text": "左の場合には、"
+          },
+          {
+            "id": "jp-323AC0000000131-a337-p1-intro-s02",
+            "role": "effect",
+            "tag": "判決で免訴",
+            "text": "判決で免訴の言渡をしなければならない。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a337-p1-i1",
+        "label": "第337条第1号",
+        "studyTitle": "確定判決",
+        "purpose": "確定判決を受けた同一事件の再度の審判を禁止し、一事不再理を実現します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a337-p1-i1-s01",
+            "role": "requirement",
+            "tag": "確定判決あり",
+            "text": "確定判決を経たとき。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a337-p1-i2",
+        "label": "第337条第2号",
+        "studyTitle": "刑の廃止",
+        "purpose": "犯罪後に処罰法令が廃止された場合に、刑罰権の行使を終了させます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a337-p1-i2-s01",
+            "role": "requirement",
+            "tag": "犯罪後に刑を廃止",
+            "text": "犯罪後の法令により刑が廃止されたとき。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a337-p1-i3",
+        "label": "第337条第3号",
+        "studyTitle": "大赦",
+        "purpose": "大赦によって国家の訴追・処罰権が失われた事件を終了させます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a337-p1-i3-s01",
+            "role": "requirement",
+            "tag": "大赦",
+            "text": "大赦があつたとき。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a337-p1-i4",
+        "label": "第337条第4号",
+        "studyTitle": "公訴時効完成",
+        "purpose": "法定期間の経過によって公訴権が消滅した事件を終了させます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a337-p1-i4-s01",
+            "role": "requirement",
+            "tag": "時効完成",
+            "text": "時効が完成したとき。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "250",
+        "displayNumber": "250",
+        "available": true
+      },
+      {
+        "routeNumber": "335",
+        "displayNumber": "335",
+        "available": true
+      },
+      {
+        "routeNumber": "336",
+        "displayNumber": "336",
+        "available": true
+      },
+      {
+        "routeNumber": "338",
+        "displayNumber": "338",
+        "available": true
+      },
+      {
+        "routeNumber": "339",
+        "displayNumber": "339",
+        "available": true
+      },
+      {
+        "routeNumber": "435",
+        "displayNumber": "435",
+        "available": true
+      }
+    ]
+  }
+}

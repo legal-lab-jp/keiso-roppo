@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "90",
+  "articleId": "jp-323AC0000000131-a90",
+  "study": {
+    "title": "裁量保釈",
+    "topic": "保釈",
+    "priority": {
+      "essay": "A",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "考慮要素",
+    "oneLine": "権利保釈が成立しなくても、危険と身体拘束の不利益を衡量して職権保釈を認めます。",
+    "trigger": "89条の除外事由がある場合でも、具体的事情から保釈を認めるべきかを検討するとき。",
+    "overview": "権利保釈の除外事由は類型的判断を含みますが、それだけで拘束継続を固定しません。具体的な逃亡・罪証隠滅リスクと、健康・生活・防御準備上の不利益を総合考慮します。",
+    "learning": {
+      "remember": "逃亡・罪証隠滅のおそれの程度と、健康・経済・社会生活・防御準備上の不利益。",
+      "understand": "89条で権利保釈を否定した後も、90条を独立して検討すること。",
+      "lookup": "条文は一文なので、考慮要素の列挙を必要時に確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a90-p1",
+        "label": "第90条",
+        "studyTitle": "最優先",
+        "purpose": "個別事情を衡量し、身体拘束を継続する必要が乏しい事案で保釈を可能にします。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a90-p1-s01",
+            "role": "actor",
+            "tag": "主体",
+            "text": "裁判所は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a90-p1-s02",
+            "role": "requirement",
+            "tag": "危険",
+            "text": "保釈された場合に被告人が逃亡し又は罪証を隠滅するおそれの程度のほか、"
+          },
+          {
+            "id": "jp-323AC0000000131-a90-p1-s03",
+            "role": "requirement",
+            "tag": "拘束の不利益",
+            "text": "身体の拘束の継続により被告人が受ける健康上、経済上、社会生活上又は防御の準備上の不利益の程度その他の事情を考慮し、"
+          },
+          {
+            "id": "jp-323AC0000000131-a90-p1-s04",
+            "role": "requirement",
+            "tag": "相当性",
+            "text": "適当と認めるときは、"
+          },
+          {
+            "id": "jp-323AC0000000131-a90-p1-s05",
+            "role": "effect",
+            "tag": "職権保釈",
+            "text": "職権で保釈を許すことができる。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "89",
+        "displayNumber": "89",
+        "available": true
+      },
+      {
+        "routeNumber": "93",
+        "displayNumber": "93",
+        "available": true
+      },
+      {
+        "routeNumber": "96",
+        "displayNumber": "96",
+        "available": true
+      }
+    ]
+  }
+}

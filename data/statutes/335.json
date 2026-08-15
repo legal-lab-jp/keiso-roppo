@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "revisionId": "323AC0000000131_20260813_508AC0000000067",
+  "source": {
+    "provider": "e-Gov法令API Version 2",
+    "sourceUrl": "https://laws.e-gov.go.jp/law/323AC0000000131",
+    "apiUrl": "https://laws.e-gov.go.jp/api/2/law_file/xml/323AC0000000131_20260813_508AC0000000067",
+    "verifiedAt": "2026-08-15"
+  },
+  "article": {
+    "id": "jp-323AC0000000131-a335",
+    "num": "335",
+    "routeNum": "335",
+    "displayNumber": "第三百三十五条",
+    "officialCaption": null,
+    "path": [
+      "第二編　第一審",
+      "第三章　公判",
+      "第五節　公判の裁判"
+    ],
+    "order": 465,
+    "paragraphs": [
+      {
+        "id": "jp-323AC0000000131-a335-p1",
+        "noteTargetId": "jp-323AC0000000131-a335-p1",
+        "num": "1",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a335-p1-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "有罪の言渡をするには、罪となるべき事実、証拠の標目及び法令の適用を示さなければならない。"
+                }
+              ],
+              "plainText": "有罪の言渡をするには、罪となるべき事実、証拠の標目及び法令の適用を示さなければならない。"
+            }
+          }
+        ],
+        "plainText": "有罪の言渡をするには、罪となるべき事実、証拠の標目及び法令の適用を示さなければならない。"
+      },
+      {
+        "id": "jp-323AC0000000131-a335-p2",
+        "noteTargetId": "jp-323AC0000000131-a335-p2",
+        "num": "2",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a335-p2-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "法律上犯罪の成立を妨げる理由又は刑の加重減免の理由となる事実が主張されたときは、これに対する判断を示さなければならない。"
+                }
+              ],
+              "plainText": "法律上犯罪の成立を妨げる理由又は刑の加重減免の理由となる事実が主張されたときは、これに対する判断を示さなければならない。"
+            }
+          }
+        ],
+        "plainText": "法律上犯罪の成立を妨げる理由又は刑の加重減免の理由となる事実が主張されたときは、これに対する判断を示さなければならない。"
+      }
+    ],
+    "plainText": "第三百三十五条有罪の言渡をするには、罪となるべき事実、証拠の標目及び法令の適用を示さなければならない。法律上犯罪の成立を妨げる理由又は刑の加重減免の理由となる事実が主張されたときは、これに対する判断を示さなければならない。"
+  }
+}

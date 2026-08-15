@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "1",
+  "articleId": "jp-323AC0000000131-a1",
+  "study": {
+    "title": "刑事訴訟法の目的",
+    "topic": "総則",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "理解",
+    "oneLine": "真相解明と人権保障を両立させ、刑罰法令を適正・迅速に実現するという全制度の出発点です。",
+    "trigger": "個別制度の趣旨を説明するとき、真実発見だけ又は人権保障だけに偏らず、刑事手続全体の調整原理を確認するとき。",
+    "overview": "刑事手続は、犯罪事実を明らかにして刑罰法令を実現するだけでなく、その過程で個人の基本的人権を保障しなければなりません。本条は、捜査・公判・証拠法の各制度を解釈する際の方向を示します。",
+    "learning": {
+      "remember": "「真相解明」「基本的人権の保障」「適正かつ迅速な適用実現」の三点。",
+      "understand": "真実発見と人権保障の一方が他方を消すのではなく、手続の中で両立させること。",
+      "lookup": "旧字体を含む正確な全文は必要時に確認すれば足ります。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a1-p1",
+        "label": "第1条",
+        "studyTitle": "趣旨を理解",
+        "purpose": "刑事訴訟法全体の目的と、真実発見・人権保障・適正迅速な裁判という調整軸を示します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a1-p1-s01",
+            "role": "actor",
+            "tag": "対象",
+            "text": "この法律は、刑事事件につき、"
+          },
+          {
+            "id": "jp-323AC0000000131-a1-p1-s02",
+            "role": "limit",
+            "tag": "両立",
+            "text": "公共の福祉の維持と個人の基本的人権の保障とを全うしつつ、"
+          },
+          {
+            "id": "jp-323AC0000000131-a1-p1-s03",
+            "role": "requirement",
+            "tag": "真相解明",
+            "text": "事案の真相を明らかにし、"
+          },
+          {
+            "id": "jp-323AC0000000131-a1-p1-s04",
+            "role": "effect",
+            "tag": "目的",
+            "text": "刑罰法令を適正且つ迅速に適用実現することを目的とする。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "30",
+        "displayNumber": "30",
+        "available": true
+      },
+      {
+        "routeNumber": "60",
+        "displayNumber": "60",
+        "available": true
+      }
+    ]
+  }
+}

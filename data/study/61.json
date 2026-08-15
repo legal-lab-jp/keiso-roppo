@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "61",
+  "articleId": "jp-323AC0000000131-a61",
+  "study": {
+    "title": "勾留前の告知・陳述聴取",
+    "topic": "勾留",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "順序を覚える",
+    "oneLine": "被告人を勾留する前に、事件を告げて陳述を聴くことを要求します。",
+    "trigger": "被告人勾留の手続的要件、本人へ弁解・意見を述べる機会が与えられたかを確認するとき。",
+    "overview": "重大な身体拘束に先立ち、被告人へ対象事件を知らせ、本人の陳述を判断資料に取り込むことで、裁判所の一方的な拘束判断を防ぎます。",
+    "learning": {
+      "remember": "事件の告知→陳述聴取→勾留。逃亡した場合の例外。",
+      "understand": "60条が実体要件、本条が勾留前の手続保障を担うこと。",
+      "lookup": "告知・聴取の具体的方式は必要時に確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a61-p1",
+        "label": "第61条",
+        "studyTitle": "手続順序",
+        "purpose": "勾留判断前に被告人の弁解を聴き、身体拘束の適正を手続的に担保します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a61-p1-s01",
+            "role": "actor",
+            "tag": "対象",
+            "text": "被告人の勾留は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a61-p1-s02",
+            "role": "requirement",
+            "tag": "事前手続",
+            "text": "被告人に対し被告事件を告げこれに関する陳述を聴いた後でなければ、"
+          },
+          {
+            "id": "jp-323AC0000000131-a61-p1-s03",
+            "role": "limit",
+            "tag": "禁止",
+            "text": "これをすることができない。"
+          },
+          {
+            "id": "jp-323AC0000000131-a61-p1-s04",
+            "role": "limit",
+            "tag": "例外",
+            "text": "但し、被告人が逃亡した場合は、この限りでない。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "60",
+        "displayNumber": "60",
+        "available": true
+      },
+      {
+        "routeNumber": "82",
+        "displayNumber": "82",
+        "available": true
+      }
+    ]
+  }
+}

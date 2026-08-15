@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "338",
+  "articleId": "jp-323AC0000000131-a338",
+  "study": {
+    "title": "判決による公訴棄却",
+    "topic": "裁判",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "重大な公訴障害",
+    "oneLine": "裁判権の欠缺、違法な再起訴・二重起訴又は公訴提起手続の無効がある場合に、判決で公訴を棄却します。",
+    "trigger": "訴追内容の有罪・無罪ではなく、裁判権又は公訴提起自体の重大な障害により事件を終了させるとき。",
+    "overview": "裁判権がない場合や、公訴提起の重複・手続違反が重大で無効な場合を、判決による公訴棄却とします。339条の決定による棄却よりも、判決で処理すべき公訴障害を列挙しています。",
+    "learning": {
+      "remember": "裁判権なし／340条違反の再起訴／同一裁判所への二重起訴／公訴提起手続違反で無効です。",
+      "understand": "被告事件の犯罪成立ではなく、裁判所が適法に本案判断へ進めるかという公訴の適法性を扱います。",
+      "lookup": "起訴状の方式・公訴事実は256条、決定で処理する公訴棄却は339条と比較します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a338-p1-intro",
+        "label": "第338条柱書",
+        "studyTitle": "判決による棄却",
+        "purpose": "重大な公訴障害がある事件を、終局的な判決形式で終了させます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a338-p1-intro-s01",
+            "role": "requirement",
+            "tag": "各号の場合",
+            "text": "左の場合には、"
+          },
+          {
+            "id": "jp-323AC0000000131-a338-p1-intro-s02",
+            "role": "effect",
+            "tag": "判決で公訴棄却",
+            "text": "判決で公訴を棄却しなければならない。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a338-p1-i1",
+        "label": "第338条第1号",
+        "studyTitle": "裁判権の欠缺",
+        "purpose": "日本の刑事裁判権が及ばない被告人に対する本案審理を防ぎます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a338-p1-i1-s01",
+            "role": "requirement",
+            "tag": "裁判権なし",
+            "text": "被告人に対して裁判権を有しないとき。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a338-p1-i2",
+        "label": "第338条第2号",
+        "studyTitle": "違法な再起訴",
+        "purpose": "公訴取消し後の再起訴制限に反する公訴を排除します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a338-p1-i2-s01",
+            "role": "requirement",
+            "tag": "340条違反",
+            "text": "第三百四十条の規定に違反して公訴が提起されたとき。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a338-p1-i3",
+        "label": "第338条第3号",
+        "studyTitle": "二重起訴",
+        "purpose": "同一事件が同一裁判所で重複して審理されることを防ぎます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a338-p1-i3-s01",
+            "role": "requirement",
+            "tag": "同一裁判所への重複公訴",
+            "text": "公訴の提起があつた事件について、更に同一裁判所に公訴が提起されたとき。"
+          }
+        ]
+      },
+      {
+        "id": "jp-323AC0000000131-a338-p1-i4",
+        "label": "第338条第4号",
+        "studyTitle": "公訴提起手続の無効",
+        "purpose": "公訴提起手続の重大な法令違反により公訴が無効な場合、本案審理を行わず終了させます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a338-p1-i4-s01",
+            "role": "requirement",
+            "tag": "手続違反により無効",
+            "text": "公訴提起の手続がその規定に違反したため無効であるとき。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "256",
+        "displayNumber": "256",
+        "available": true
+      },
+      {
+        "routeNumber": "335",
+        "displayNumber": "335",
+        "available": true
+      },
+      {
+        "routeNumber": "336",
+        "displayNumber": "336",
+        "available": true
+      },
+      {
+        "routeNumber": "337",
+        "displayNumber": "337",
+        "available": true
+      },
+      {
+        "routeNumber": "339",
+        "displayNumber": "339",
+        "available": true
+      }
+    ]
+  }
+}

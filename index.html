@@ -6,24 +6,25 @@
   <meta name="theme-color" content="#183B50">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="description" content="刑事訴訟法の条文と学習解説をiPadで確認するオフライン対応条文アプリ">
-  <meta property="og:title" content="刑訴条文ナビ（テスト版）">
-  <meta property="og:description" content="刑事訴訟法320条、321条、322条をiPadで読むためのオフライン対応条文アプリ">
+  <meta name="description" content="司法試験・予備試験向けに選定した刑事訴訟法114条と学習解説を、iPadで確認できるオフライン対応条文アプリ">
+  <meta property="og:title" content="刑訴条文ナビ">
+  <meta property="og:description" content="司法試験・予備試験向けの刑事訴訟法重要条文114条をiPadで読むためのオフライン対応条文アプリ">
+  <meta property="og:image" content="https://legal-lab-jp.github.io/keiso-roppo/assets/icons/icon-512.png">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/icon-180.png">
   <link rel="icon" type="image/svg+xml" href="./assets/icons/app-icon.svg">
-  <link rel="stylesheet" href="./assets/css/app.css?v=0.1.2-test">
+  <link rel="stylesheet" href="./assets/css/app.css?v=1.0.1">
   <title>刑訴条文ナビ</title>
 </head>
 <body>
   <a class="skip-link" href="#article-main">本文へ移動</a>
   <div class="app-shell" id="app-shell" data-theme="system" data-font-scale="standard">
     <header class="app-header" aria-label="アプリヘッダー">
-      <a class="brand" href="./" aria-label="刑訴条文ナビ 第320条へ">
+      <a class="brand" href="./" aria-label="刑訴条文ナビを開く">
         <img class="brand-icon" src="./assets/icons/app-icon.svg" alt="" width="32" height="32">
         <span>刑訴条文ナビ</span>
-        <span class="version-badge">TEST 0.1</span>
+        <span class="version-badge">114条版</span>
       </a>
       <div class="header-actions">
         <button class="icon-button" id="header-search" type="button" aria-label="検索を開く" title="検索">⌕</button>
@@ -50,7 +51,7 @@
       <button type="button" data-overlay="settings" aria-label="設定を開く"><span aria-hidden="true">⚙</span><span>設定</span></button>
     </nav>
     <footer class="app-source-note">
-      <span>テスト版・学習用</span>
+      <span>司法試験・予備試験向け重要条文114条</span>
       <a href="https://laws.e-gov.go.jp/law/323AC0000000131" target="_blank" rel="noopener noreferrer">条文出典: e-Gov法令検索</a>
       <span>学習解説は公式注釈・法的助言ではありません。</span>
       <a href="./NOTICE.md">出典・再利用条件</a>
@@ -60,6 +61,6 @@
   <div id="overlay-root"></div>
   <input id="import-file" type="file" accept="application/json,.json" hidden>
   <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
-  <script type="module" src="./js/app.js?v=0.1.2-test"></script>
+  <script type="module" src="./js/app.js?v=1.0.1"></script>
 </body>
 </html>

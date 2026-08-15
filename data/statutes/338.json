@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "revisionId": "323AC0000000131_20260813_508AC0000000067",
+  "source": {
+    "provider": "e-Gov法令API Version 2",
+    "sourceUrl": "https://laws.e-gov.go.jp/law/323AC0000000131",
+    "apiUrl": "https://laws.e-gov.go.jp/api/2/law_file/xml/323AC0000000131_20260813_508AC0000000067",
+    "verifiedAt": "2026-08-15"
+  },
+  "article": {
+    "id": "jp-323AC0000000131-a338",
+    "num": "338",
+    "routeNum": "338",
+    "displayNumber": "第三百三十八条",
+    "officialCaption": null,
+    "path": [
+      "第二編　第一審",
+      "第三章　公判",
+      "第五節　公判の裁判"
+    ],
+    "order": 468,
+    "paragraphs": [
+      {
+        "id": "jp-323AC0000000131-a338-p1",
+        "noteTargetId": "jp-323AC0000000131-a338-p1-intro",
+        "num": "1",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a338-p1-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "左の場合には、判決で公訴を棄却しなければならない。"
+                }
+              ],
+              "plainText": "左の場合には、判決で公訴を棄却しなければならない。"
+            }
+          },
+          {
+            "kind": "item",
+            "item": {
+              "id": "jp-323AC0000000131-a338-p1-i1",
+              "num": "1",
+              "titleText": "一",
+              "blocks": [
+                {
+                  "kind": "sentence",
+                  "sentence": {
+                    "id": "jp-323AC0000000131-a338-p1-i1-sentence-1",
+                    "inline": [
+                      {
+                        "type": "text",
+                        "text": "被告人に対して裁判権を有しないとき。"
+                      }
+                    ],
+                    "plainText": "被告人に対して裁判権を有しないとき。"
+                  }
+                }
+              ],
+              "plainText": "被告人に対して裁判権を有しないとき。"
+            }
+          },
+          {
+            "kind": "item",
+            "item": {
+              "id": "jp-323AC0000000131-a338-p1-i2",
+              "num": "2",
+              "titleText": "二",
+              "blocks": [
+                {
+                  "kind": "sentence",
+                  "sentence": {
+                    "id": "jp-323AC0000000131-a338-p1-i2-sentence-1",
+                    "inline": [
+                      {
+                        "type": "text",
+                        "text": "第三百四十条の規定に違反して公訴が提起されたとき。"
+                      }
+                    ],
+                    "plainText": "第三百四十条の規定に違反して公訴が提起されたとき。"
+                  }
+                }
+              ],
+              "plainText": "第三百四十条の規定に違反して公訴が提起されたとき。"
+            }
+          },
+          {
+            "kind": "item",
+            "item": {
+              "id": "jp-323AC0000000131-a338-p1-i3",
+              "num": "3",
+              "titleText": "三",
+              "blocks": [
+                {
+                  "kind": "sentence",
+                  "sentence": {
+                    "id": "jp-323AC0000000131-a338-p1-i3-sentence-1",
+                    "inline": [
+                      {
+                        "type": "text",
+                        "text": "公訴の提起があつた事件について、更に同一裁判所に公訴が提起されたとき。"
+                      }
+                    ],
+                    "plainText": "公訴の提起があつた事件について、更に同一裁判所に公訴が提起されたとき。"
+                  }
+                }
+              ],
+              "plainText": "公訴の提起があつた事件について、更に同一裁判所に公訴が提起されたとき。"
+            }
+          },
+          {
+            "kind": "item",
+            "item": {
+              "id": "jp-323AC0000000131-a338-p1-i4",
+              "num": "4",
+              "titleText": "四",
+              "blocks": [
+                {
+                  "kind": "sentence",
+                  "sentence": {
+                    "id": "jp-323AC0000000131-a338-p1-i4-sentence-1",
+                    "inline": [
+                      {
+                        "type": "text",
+                        "text": "公訴提起の手続がその規定に違反したため無効であるとき。"
+                      }
+                    ],
+                    "plainText": "公訴提起の手続がその規定に違反したため無効であるとき。"
+                  }
+                }
+              ],
+              "plainText": "公訴提起の手続がその規定に違反したため無効であるとき。"
+            }
+          }
+        ],
+        "plainText": "左の場合には、判決で公訴を棄却しなければならない。一被告人に対して裁判権を有しないとき。二第三百四十条の規定に違反して公訴が提起されたとき。三公訴の提起があつた事件について、更に同一裁判所に公訴が提起されたとき。四公訴提起の手続がその規定に違反したため無効であるとき。"
+      }
+    ],
+    "plainText": "第三百三十八条左の場合には、判決で公訴を棄却しなければならない。一被告人に対して裁判権を有しないとき。二第三百四十条の規定に違反して公訴が提起されたとき。三公訴の提起があつた事件について、更に同一裁判所に公訴が提起されたとき。四公訴提起の手続がその規定に違反したため無効であるとき。"
+  }
+}

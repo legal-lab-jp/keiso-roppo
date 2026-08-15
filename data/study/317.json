@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "317",
+  "articleId": "jp-323AC0000000131-a317",
+  "study": {
+    "title": "証拠裁判主義",
+    "topic": "証拠調べ・証拠総則",
+    "priority": {
+      "essay": "A",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "事実認定の根拠",
+    "oneLine": "刑事裁判の事実認定は証拠によらなければならないという原則を定めます。",
+    "trigger": "犯罪事実その他の事実を何によって認定するか、厳格な証明が必要かを論じる出発点。",
+    "overview": "裁判官の推測や法廷外の情報ではなく、公判に証拠として現れた資料によって事実を認定するという証拠法の出発点です。犯罪事実については、証拠能力を備え、適式な証拠調べを経た証拠による厳格な証明が必要と整理されます。",
+    "learning": {
+      "remember": "事実の認定は証拠による。犯罪事実は、証拠能力があり適式に取り調べた証拠による厳格な証明です。",
+      "understand": "317条は認定資料の資格と手続を問題にし、318条は適法に証拠となった資料の証明力評価を問題にします。",
+      "lookup": "具体的な証拠能力の制限は、319条以下の自白・伝聞法則などの個別規定を確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a317-p1",
+        "label": "第317条",
+        "studyTitle": "証拠による事実認定",
+        "purpose": "刑事裁判の事実認定を、公判で証拠として取り扱える資料に基づかせ、恣意的な認定を防ぎます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a317-p1-s01",
+            "role": "requirement",
+            "tag": "事実の認定",
+            "text": "事実の認定は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a317-p1-s02",
+            "role": "effect",
+            "tag": "証拠による",
+            "text": "証拠による。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "305",
+        "displayNumber": "305",
+        "available": true
+      },
+      {
+        "routeNumber": "306",
+        "displayNumber": "306",
+        "available": true
+      },
+      {
+        "routeNumber": "318",
+        "displayNumber": "318",
+        "available": true
+      }
+    ]
+  }
+}

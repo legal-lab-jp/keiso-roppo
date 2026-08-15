@@ -206,6 +206,7 @@ a { color: var(--color-link); }
   background: var(--requirement-bg);
   border-bottom: 1px solid var(--requirement-line);
 }
+.update-banner[hidden] { display: none; }
 .update-banner button { min-height: 36px; padding: 4px 10px; border-radius: 8px; }
 
 .app-layout { min-width: 0; }
@@ -375,4 +376,45 @@ a { color: var(--color-link); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+}
+
+/* 本番版の114条データ構造と一覧フィルター */
+.study-heading-note { margin: 4px 0 0; color: var(--color-muted); font-size: 13px; }
+.article-tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 10px 0 5px; }
+.article-tag { display: inline-flex; align-items: center; min-height: 28px; padding: 3px 8px; color: var(--color-primary); background: var(--color-primary-soft); border: 1px solid color-mix(in srgb, var(--color-primary) 28%, var(--color-line)); border-radius: 999px; font-size: 12px; font-weight: 750; }
+.article-tag.is-topic { color: var(--limit-text); background: var(--limit-bg); border-color: var(--limit-line); }
+.official-label { margin: 0 0 16px; color: var(--color-muted); font-size: 13px; font-weight: 700; }
+.statute-subitem { padding-left: 1.3em; }
+.statute-item, .statute-subitem { margin-top: 12px; scroll-margin-top: 92px; }
+.statute-line { display: flow-root; }
+.statute-line > .statute-text { margin-left: 1.4em; }
+.paragraph-caption { margin: 0 0 8px; color: var(--color-primary); font-weight: 750; }
+.paragraph-number { float: left; min-width: 1.4em; color: var(--color-primary); font-family: var(--law-font); font-weight: 750; }
+.statute-text + .statute-text { margin-top: 8px; }
+.official-memo { margin-top: 10px; }
+.statute-columns { display: grid; gap: 8px; margin: 10px 0; }
+.statute-column { display: grid; grid-template-columns: 2.1em minmax(0, 1fr); gap: 5px; padding: 8px; background: var(--color-surface-2); border-radius: 8px; }
+.column-number { color: var(--color-primary); font-family: var(--law-font); font-weight: 750; }
+.statute-column .statute-text { margin: 0; }
+.statute-table-wrap { overflow-x: auto; margin: 12px 0; }
+.statute-table { width: 100%; min-width: 480px; border-collapse: collapse; font-family: var(--law-font); font-size: calc(var(--law-size) * .88); line-height: 1.7; }
+.statute-table td { padding: 8px; vertical-align: top; border: 1px solid var(--color-line); }
+.study-card-wide { grid-column: 1 / -1; }
+.previous-next { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 24px; }
+.previous-next > :last-child { justify-self: end; }
+.study-omitted { margin: 16px 0 0; padding: 12px; color: var(--limit-text); background: var(--limit-bg); border-left: 4px solid var(--limit-line); border-radius: 8px; font-size: 14px; }
+.overlay-article span, .search-result span { color: var(--color-muted); font-size: 13px; line-height: 1.45; }
+.list-controls { display: grid; gap: 8px; margin-top: 12px; }
+.list-mode { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.filter-chip { min-height: 38px; padding: 6px 8px; color: var(--color-primary); background: var(--color-surface); border: 1px solid var(--color-line); border-radius: 8px; font-size: 13px; font-weight: 750; }
+.filter-chip.is-active { color: #fff; background: var(--color-header); border-color: var(--color-header); }
+.filter-select { width: 100%; min-height: 40px; padding: 7px 9px; color: var(--color-text); background: var(--color-surface); border: 1px solid var(--color-line); border-radius: 8px; font: inherit; font-size: 13px; }
+.topic-heading { margin: 22px 0 8px; color: var(--color-primary); font-size: 15px; }
+.article-list-results { margin-top: 14px; }
+.sources-body { display: grid; gap: 10px; }
+.sources-body h3 { margin: 12px 0 0; color: var(--color-primary); font-size: 17px; }
+.sources-body p { margin: 0; }
+@media (min-width: 960px) {
+  .app-layout { grid-template-columns: 320px minmax(0, 1fr); }
+  .rail-footer { grid-template-columns: repeat(3, 1fr); }
 }

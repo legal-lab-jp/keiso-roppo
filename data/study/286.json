@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "286",
+  "articleId": "jp-323AC0000000131-a286",
+  "study": {
+    "title": "被告人不出頭時の開廷禁止",
+    "topic": "公判手続",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "被告人の出頭",
+    "oneLine": "法定の例外を除き、被告人が公判期日に出頭しなければ開廷できないとします。",
+    "trigger": "被告人が公判期日に欠席した場合に、そのまま審理できるかを判断するとき。",
+    "overview": "被告人に公判へ参加し防御する機会を保障するため、本人の出頭を開廷の原則的条件とします。『前三条に規定する場合の外』という例外留保があるため、欠席判決一般を無条件に禁止する条文としてではなく、原則規定として読みます。",
+    "learning": {
+      "remember": "法定の例外を除き、被告人が公判期日に出頭しないときは開廷できません。",
+      "understand": "被告人の在廷は、訴訟主体として審理に参加し防御権を行使するための基礎です。",
+      "lookup": "欠席のまま進められるかが具体的に問われたら、条文が留保する283条から285条の例外も確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a286-p1",
+        "label": "第286条",
+        "studyTitle": "被告人出頭の原則",
+        "purpose": "被告人が公判に参加し、訴追内容と証拠に対して防御する機会を確保します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a286-p1-s01",
+            "role": "limit",
+            "tag": "法定例外を除く",
+            "text": "前三条に規定する場合の外、"
+          },
+          {
+            "id": "jp-323AC0000000131-a286-p1-s02",
+            "role": "requirement",
+            "tag": "被告人の不出頭",
+            "text": "被告人が公判期日に出頭しないときは、"
+          },
+          {
+            "id": "jp-323AC0000000131-a286-p1-s03",
+            "role": "effect",
+            "tag": "開廷禁止",
+            "text": "開廷することはできない。"
+          }
+        ]
+      }
+    ],
+    "omitted": "283条から285条の欠席開廷の例外は、適用場面が限定されるため今回は収録せず、必要時に参照します。",
+    "related": [
+      {
+        "routeNumber": "282",
+        "displayNumber": "282",
+        "available": true
+      },
+      {
+        "routeNumber": "289",
+        "displayNumber": "289",
+        "available": true
+      },
+      {
+        "routeNumber": "291",
+        "displayNumber": "291",
+        "available": true
+      }
+    ]
+  }
+}

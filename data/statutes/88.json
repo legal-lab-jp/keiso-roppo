@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "revisionId": "323AC0000000131_20260813_508AC0000000067",
+  "source": {
+    "provider": "e-Gov法令API Version 2",
+    "sourceUrl": "https://laws.e-gov.go.jp/law/323AC0000000131",
+    "apiUrl": "https://laws.e-gov.go.jp/api/2/law_file/xml/323AC0000000131_20260813_508AC0000000067",
+    "verifiedAt": "2026-08-15"
+  },
+  "article": {
+    "id": "jp-323AC0000000131-a88",
+    "num": "88",
+    "routeNum": "88",
+    "displayNumber": "第八十八条",
+    "officialCaption": null,
+    "path": [
+      "第一編　総則",
+      "第八章　被告人の召喚、勾引及び勾留"
+    ],
+    "order": 99,
+    "paragraphs": [
+      {
+        "id": "jp-323AC0000000131-a88-p1",
+        "noteTargetId": "jp-323AC0000000131-a88-p1",
+        "num": "1",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a88-p1-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "勾留されている被告人又はその弁護人、法定代理人、保佐人、配偶者、直系の親族若しくは兄弟姉妹は、保釈の請求をすることができる。"
+                }
+              ],
+              "plainText": "勾留されている被告人又はその弁護人、法定代理人、保佐人、配偶者、直系の親族若しくは兄弟姉妹は、保釈の請求をすることができる。"
+            }
+          }
+        ],
+        "plainText": "勾留されている被告人又はその弁護人、法定代理人、保佐人、配偶者、直系の親族若しくは兄弟姉妹は、保釈の請求をすることができる。"
+      },
+      {
+        "id": "jp-323AC0000000131-a88-p2",
+        "noteTargetId": "jp-323AC0000000131-a88-p2",
+        "num": "2",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a88-p2-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "第八十二条第三項の規定は、前項の請求についてこれを準用する。"
+                }
+              ],
+              "plainText": "第八十二条第三項の規定は、前項の請求についてこれを準用する。"
+            }
+          }
+        ],
+        "plainText": "第八十二条第三項の規定は、前項の請求についてこれを準用する。"
+      }
+    ],
+    "plainText": "第八十八条勾留されている被告人又はその弁護人、法定代理人、保佐人、配偶者、直系の親族若しくは兄弟姉妹は、保釈の請求をすることができる。第八十二条第三項の規定は、前項の請求についてこれを準用する。"
+  }
+}

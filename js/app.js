@@ -1,4 +1,4 @@
-import { goToArticle, onRouteChange, routeNumber } from "./router.js";
+import { goToArticle, goToView, onRouteChange, parseRoute } from "./router.js";
 import { searchArticles } from "./search.js";
 import { createStorage } from "./storage.js";
 import { backupPayload, downloadBackup, parseImport } from "./import-export.js";
@@ -9,18 +9,23 @@ import {
   conflictBody,
   createOverlay,
   renderArticle,
+  renderNotFound,
   renderRail,
   searchBody,
-  settingsBody
+  settingsBody,
+  sourcesBody
 } from "./render.js";
 
-const CONTENT_VERSION = "2026-08-15.test1";
-const defaults = { theme: "system", fontScale: "standard", displayMode: "law", lastArticleNumber: "320" };
-const validPreferenceValues = {
-  theme: new Set(["system", "light", "dark"]),
-  fontScale: new Set(["small", "standard", "large"]),
-  displayMode: new Set(["law", "study"]),
-  lastArticleNumber: new Set(["320", "321", "322"])
+const CONTENT_VERSION = "2026-08-15.exam114.1";
+const defaults = {
+  theme: "system",
+  fontScale: "standard",
+  displayMode: "law",
+  lastArticleNumber: "320",
+  listMode: "statute",
+  priorityFilter: "all",
+  topicFilter: "all",
+  recentArticles: []
 };
 
 const appShell = document.getElementById("app-shell");
@@ -48,10 +53,13 @@ let toastTimer = null;
 const state = {
   activeArticleNumber: "320",
   displayMode: "law",
-  activeSegmentId: null,
   openMemos: new Set(),
   theme: "system",
   fontScale: "standard",
+  listMode: "statute",
+  priorityFilter: "all",
+  topicFilter: "all",
+  recentArticles: [],
   notes: new Map(),
   bookmarks: new Set(),
   storageMode: "memory",
@@ -94,93 +102,203 @@ async function persistPreference(key, value) {
 }
 
 function currentArticle() {
-  return articles.get(state.activeArticleNumber)?.article;
+  return articles.get(state.activeArticleNumber) ?? null;
 }
 
-function scrollToTarget(id) {
-  requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ block: "center", behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }));
+function visibleArticles() {
+  const filtered = catalog.articles.filter((article) => {
+    const priority = state.priorityFilter === "all"
+      || (state.priorityFilter === "essayA" && article.essayPriority === "A")
+      || (state.priorityFilter === "preliminaryShortA" && article.preliminaryShortPriority === "A")
+      || (state.priorityFilter === "supplementalBB" && article.essayPriority === "B" && article.preliminaryShortPriority === "B");
+    const topic = state.topicFilter === "all" || article.topic === state.topicFilter;
+    return priority && topic;
+  });
+  if (state.listMode !== "topic") return filtered;
+  const topicOrder = new Map(catalog.topics.map((topic, index) => [topic.name, index]));
+  return [...filtered].sort((left, right) => topicOrder.get(left.topic) - topicOrder.get(right.topic) || left.order - right.order);
 }
 
 function render() {
-  const article = currentArticle();
-  if (!article) {
-    main.replaceChildren(Object.assign(document.createElement("p"), { className: "error-state", textContent: "条文データを読み込めませんでした。" }));
-    return;
-  }
-  renderRail(rail, catalog, state.activeArticleNumber, state.bookmarks, navigate, () => openOverlay("bookmarks"), () => openOverlay("settings"));
-  renderArticle(main, article, state, state.notes, state.bookmarks, {
-    onToggleStudy: async () => {
-      state.displayMode = state.displayMode === "law" ? "study" : "law";
-      state.activeSegmentId = null;
-      await persistPreference("displayMode", state.displayMode);
-      render();
-    },
-    onBookmark: toggleBookmark,
-    onCopy: copyCurrentLaw,
-    onSegment: selectSegment,
-    onRelated: navigate,
-    onOpenMemo: (provisionId) => {
-      state.openMemos.add(provisionId);
-      render();
-      requestAnimationFrame(() => document.getElementById(`memo-${provisionId}`)?.focus());
-    },
-    onCloseMemo: (provisionId) => {
-      state.openMemos.delete(provisionId);
-      render();
-    },
-    onMemoInput: (provision, textarea) => scheduleMemoSave(provision, textarea, false),
-    onMemoBlur: (provision, textarea) => scheduleMemoSave(provision, textarea, true)
+  if (!catalog) return;
+  renderRail(rail, catalog, { ...state, bookmarkCount: state.bookmarks.size }, {
+    getVisibleArticles: visibleArticles,
+    onNavigate: navigate,
+    onFilterChange: updateListPreference,
+    onOpenBookmarks: () => goToView("bookmarks"),
+    onOpenSources: () => goToView("sources"),
+    onOpenSettings: () => goToView("settings")
   });
+  const current = currentArticle();
+  if (current) {
+    renderArticle(main, current, state, state.notes, state.bookmarks, {
+      onToggleStudy: toggleStudy,
+      onBookmark: toggleBookmark,
+      onCopy: copyCurrentLaw,
+      onNavigate: navigate,
+      onOpenMemo: (provisionId) => {
+        state.openMemos.add(provisionId);
+        render();
+        requestAnimationFrame(() => document.getElementById(`memo-${provisionId}`)?.focus());
+      },
+      onCloseMemo: (provisionId) => {
+        state.openMemos.delete(provisionId);
+        render();
+      },
+      onMemoInput: (provision, textarea) => scheduleMemoSave(provision, textarea, false),
+      onMemoBlur: (provision, textarea) => scheduleMemoSave(provision, textarea, true)
+    });
+  }
   applyVisualPreferences();
 }
 
-async function navigate(number) {
-  if (!["320", "321", "322"].includes(String(number))) return;
-  closeOverlay();
-  state.activeSegmentId = null;
-  state.openMemos.clear();
-  goToArticle(String(number));
+function renderUnknownRoute() {
+  renderRail(rail, catalog, { ...state, bookmarkCount: state.bookmarks.size }, {
+    getVisibleArticles: visibleArticles,
+    onNavigate: navigate,
+    onFilterChange: updateListPreference,
+    onOpenBookmarks: () => goToView("bookmarks"),
+    onOpenSources: () => goToView("sources"),
+    onOpenSettings: () => goToView("settings")
+  });
+  renderNotFound(main, catalog, navigate);
+  applyVisualPreferences();
 }
 
-async function handleRoute(number) {
-  const next = number || state.activeArticleNumber || "320";
-  if (!number) {
-    showToast("指定された条文は収録されていないため、第320条を開きました。");
-    goToArticle("320", { replace: true });
+async function updateRecent(routeNumber) {
+  state.recentArticles = [routeNumber, ...state.recentArticles.filter((item) => item !== routeNumber)].slice(0, 20);
+  await persistPreference("recentArticles", state.recentArticles);
+}
+
+function closeOverlay({ preserveRoute = false } = {}) {
+  if (!activeOverlay) return;
+  overlayRoot.replaceChildren();
+  if (overlayKeyHandler) document.removeEventListener("keydown", overlayKeyHandler);
+  activeOverlay = null;
+  overlayKeyHandler = null;
+  const origin = overlayOrigin;
+  overlayOrigin = null;
+  origin?.focus?.();
+  if (!preserveRoute && parseRoute().kind !== "article") goToArticle(state.activeArticleNumber, { replace: true });
+}
+
+function trapOverlayFocus(event, panel) {
+  if (event.key === "Escape") {
+    closeOverlay();
     return;
   }
-  state.activeArticleNumber = next;
-  state.activeSegmentId = null;
-  state.openMemos.clear();
-  await persistPreference("lastArticleNumber", next);
-  render();
-  window.scrollTo({ top: 0, behavior: "auto" });
+  if (event.key !== "Tab") return;
+  const focusable = [...panel.querySelectorAll("button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), a[href]")];
+  if (!focusable.length) return;
+  const first = focusable[0];
+  const last = focusable.at(-1);
+  if (event.shiftKey && document.activeElement === first) {
+    event.preventDefault();
+    last.focus();
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault();
+    first.focus();
+  }
 }
 
-function selectSegment(segmentId, destination) {
-  state.activeSegmentId = segmentId;
+function setOverlay(title, body, kind = "sheet") {
+  closeOverlay({ preserveRoute: true });
+  overlayOrigin = document.activeElement;
+  const { backdrop, panel } = createOverlay({ title, body, kind, onClose: closeOverlay });
+  activeOverlay = backdrop;
+  overlayRoot.replaceChildren(backdrop);
+  overlayKeyHandler = (event) => trapOverlayFocus(event, panel);
+  document.addEventListener("keydown", overlayKeyHandler);
+  requestAnimationFrame(() => panel.querySelector("input, button, select, textarea, a[href]")?.focus());
+}
+
+function openOverlay(kind, query = "") {
+  if (!catalog) return;
+  const articleHandlers = {
+    getVisibleArticles: visibleArticles,
+    onNavigate: navigate,
+    onFilterChange: updateListPreference
+  };
+  if (kind === "articles") setOverlay("収録条文", articleListBody({ catalog, state, handlers: articleHandlers }), "side-sheet");
+  if (kind === "search") setOverlay("検索", searchBody({ onSearch: (value) => searchArticles(catalog, articles, value), onNavigate: navigate, initialQuery: query }));
+  if (kind === "bookmarks") setOverlay("しおり", bookmarksBody(catalog, state.bookmarks, navigate));
+  if (kind === "settings") setOverlay("設定", settingsBody({
+    state,
+    version,
+    catalog,
+    onTheme: async (value) => { state.theme = value; applyVisualPreferences(); await persistPreference("theme", value); },
+    onFontScale: async (value) => { state.fontScale = value; applyVisualPreferences(); await persistPreference("fontScale", value); },
+    onExport: exportBackup,
+    onImport: () => importFile.click()
+  }));
+  if (kind === "sources") setOverlay("出典", sourcesBody(catalog, version));
+}
+
+async function navigate(routeNumber) {
+  if (!articles.has(String(routeNumber))) return;
+  closeOverlay({ preserveRoute: true });
+  goToArticle(String(routeNumber));
+}
+
+async function handleRoute(route) {
+  if (route.kind === "article") {
+    if (!articles.has(route.routeNumber)) {
+      closeOverlay({ preserveRoute: true });
+      renderUnknownRoute();
+      return;
+    }
+    state.activeArticleNumber = route.routeNumber;
+    state.openMemos.clear();
+    await persistPreference("lastArticleNumber", route.routeNumber);
+    await updateRecent(route.routeNumber);
+    closeOverlay({ preserveRoute: true });
+    render();
+    window.scrollTo({ top: 0, behavior: "auto" });
+    return;
+  }
+  if (["articles", "bookmarks", "search", "settings", "sources"].includes(route.kind)) {
+    render();
+    openOverlay(route.kind, route.query);
+    return;
+  }
+  closeOverlay({ preserveRoute: true });
+  renderUnknownRoute();
+}
+
+async function updateListPreference(key, value) {
+  state[key] = value;
+  await persistPreference(key, value);
   render();
-  scrollToTarget(destination === "text" ? `text-${segmentId}` : `explain-${segmentId}`);
+  if (parseRoute().kind === "articles") openOverlay("articles");
+}
+
+async function toggleStudy() {
+  state.displayMode = state.displayMode === "law" ? "study" : "law";
+  await persistPreference("displayMode", state.displayMode);
+  render();
 }
 
 async function toggleBookmark() {
-  const article = currentArticle();
-  if (!article) return;
-  if (state.bookmarks.has(article.id)) {
-    state.bookmarks.delete(article.id);
-    await storage.remove("bookmarks", article.id);
+  const current = currentArticle();
+  if (!current) return;
+  const articleId = current.statute.article.id;
+  if (state.bookmarks.has(articleId)) {
+    state.bookmarks.delete(articleId);
+    await storage.remove("bookmarks", articleId);
     showToast("しおりを外しました");
   } else {
-    state.bookmarks.add(article.id);
-    await storage.put("bookmarks", { articleId: article.id, createdAt: new Date().toISOString() });
+    state.bookmarks.add(articleId);
+    await storage.put("bookmarks", { articleId, createdAt: new Date().toISOString() });
     showToast("しおりに追加しました");
   }
   render();
 }
 
 async function copyCurrentLaw() {
-  const article = currentArticle();
-  const text = [article.displayNumber, ...article.provisions.map((provision) => `${provision.itemMark ? `${provision.itemMark}　` : ""}${provision.segments.map((segment) => segment.text).join("")}`)].join("\n");
+  const current = currentArticle();
+  if (!current) return;
+  const law = current.statute.article;
+  const text = `${law.displayNumber}${law.officialCaption ? ` ${law.officialCaption}` : ""}\n${law.paragraphs.map((paragraph) => paragraph.plainText).join("\n")}`;
   try {
     await navigator.clipboard.writeText(text);
   } catch {
@@ -208,7 +326,7 @@ function scheduleMemoSave(provision, textarea, immediate) {
     persistPendingMemo(provision.id);
   } else {
     memoStatus(textarea, "保存中…");
-    noteTimers.set(provision.id, window.setTimeout(() => persistPendingMemo(provision.id), 500));
+    noteTimers.set(provision.id, window.setTimeout(() => persistPendingMemo(provision.id), 1000));
   }
 }
 
@@ -227,7 +345,13 @@ async function persistPendingMemo(provisionId) {
   const previous = state.notes.get(provision.id);
   try {
     if (value.trim()) {
-      const note = { provisionId: provision.id, articleId: currentArticle().id, value, updatedAt: new Date().toISOString(), contentVersion: CONTENT_VERSION };
+      const note = {
+        provisionId: provision.id,
+        articleId: currentArticle().statute.article.id,
+        value,
+        updatedAt: new Date().toISOString(),
+        contentVersion: CONTENT_VERSION
+      };
       await storage.put("notes", note);
       state.notes.set(provision.id, note);
       memoStatus(textarea, `保存済み ${new Date().toLocaleTimeString("ja-JP", { hour: "2-digit", minute: "2-digit" })}`);
@@ -251,68 +375,6 @@ async function persistPendingMemo(provisionId) {
   }
 }
 
-function closeOverlay() {
-  if (!activeOverlay) return;
-  overlayRoot.replaceChildren();
-  if (overlayKeyHandler) document.removeEventListener("keydown", overlayKeyHandler);
-  activeOverlay = null;
-  overlayKeyHandler = null;
-  const origin = overlayOrigin;
-  overlayOrigin = null;
-  origin?.focus?.();
-}
-
-function trapOverlayFocus(event, panel) {
-  if (event.key === "Escape") {
-    closeOverlay();
-    return;
-  }
-  if (event.key !== "Tab") return;
-  const focusable = [...panel.querySelectorAll("button:not([disabled]), input:not([disabled]), textarea:not([disabled]), a[href]")];
-  if (!focusable.length) return;
-  const first = focusable[0];
-  const last = focusable.at(-1);
-  if (event.shiftKey && document.activeElement === first) {
-    event.preventDefault();
-    last.focus();
-  } else if (!event.shiftKey && document.activeElement === last) {
-    event.preventDefault();
-    first.focus();
-  }
-}
-
-function setOverlay(title, body, kind = "sheet") {
-  closeOverlay();
-  overlayOrigin = document.activeElement;
-  const { backdrop, panel } = createOverlay({ title, body, kind, onClose: closeOverlay });
-  activeOverlay = backdrop;
-  overlayRoot.replaceChildren(backdrop);
-  overlayKeyHandler = (event) => trapOverlayFocus(event, panel);
-  document.addEventListener("keydown", overlayKeyHandler);
-  requestAnimationFrame(() => panel.querySelector("input, button, textarea, a[href]")?.focus());
-}
-
-function openOverlay(kind) {
-  if (!catalog) return;
-  if (kind === "articles") {
-    setOverlay("収録条文", articleListBody(catalog, state.activeArticleNumber, navigate), "side-sheet");
-  } else if (kind === "search") {
-    setOverlay("検索", searchBody({ onSearch: (query) => searchArticles(catalog, query), onNavigate: navigate }));
-  } else if (kind === "bookmarks") {
-    setOverlay("しおり", bookmarksBody(catalog, state.bookmarks, navigate));
-  } else if (kind === "settings") {
-    setOverlay("設定", settingsBody({
-      state,
-      version,
-      sourceUrl: catalog.law.sourceUrl,
-      onTheme: async (value) => { state.theme = value; applyVisualPreferences(); await persistPreference("theme", value); },
-      onFontScale: async (value) => { state.fontScale = value; applyVisualPreferences(); await persistPreference("fontScale", value); },
-      onExport: exportBackup,
-      onImport: () => importFile.click()
-    }));
-  }
-}
-
 async function exportBackup() {
   try {
     const snapshot = await storage.snapshot();
@@ -325,9 +387,16 @@ async function exportBackup() {
   }
 }
 
-function filteredPreferences(preferences) {
+function validPreferences(preferences) {
   const result = {};
-  for (const [key, value] of Object.entries(preferences || {})) if (validPreferenceValues[key]?.has(value)) result[key] = value;
+  if (["system", "light", "dark"].includes(preferences.theme)) result.theme = preferences.theme;
+  if (["small", "standard", "large"].includes(preferences.fontScale)) result.fontScale = preferences.fontScale;
+  if (["law", "study"].includes(preferences.displayMode)) result.displayMode = preferences.displayMode;
+  if (["statute", "topic"].includes(preferences.listMode)) result.listMode = preferences.listMode;
+  if (["all", "essayA", "preliminaryShortA", "supplementalBB"].includes(preferences.priorityFilter)) result.priorityFilter = preferences.priorityFilter;
+  if (preferences.topicFilter === "all" || catalog.topics.some((topic) => topic.name === preferences.topicFilter)) result.topicFilter = preferences.topicFilter;
+  if (articles.has(preferences.lastArticleNumber)) result.lastArticleNumber = preferences.lastArticleNumber;
+  if (Array.isArray(preferences.recentArticles)) result.recentArticles = preferences.recentArticles.filter((route) => articles.has(route)).slice(0, 20);
   return result;
 }
 
@@ -339,16 +408,33 @@ async function applyImport(parsed, conflictPolicy) {
     if (!existing || existing.value === note.value || conflictPolicy === "replace") writes.push(note);
   }
   const importedBookmarks = parsed.bookmarks.filter((bookmark) => !state.bookmarks.has(bookmark.articleId));
-  const preferences = filteredPreferences(parsed.preferences);
+  const preferences = validPreferences(parsed.preferences);
   await storage.putMany({ notes: writes, bookmarks: importedBookmarks, preferences });
   for (const note of writes) state.notes.set(note.provisionId, note);
   for (const bookmark of importedBookmarks) state.bookmarks.add(bookmark.articleId);
-  for (const [key, value] of Object.entries(preferences)) state[key] = value;
+  Object.assign(state, preferences);
   applyVisualPreferences();
   closeOverlay();
   render();
-  const ignoredMessage = parsed.ignored ? ` 対象外の${parsed.ignored}件は変更していません。` : "";
-  showToast(`${writes.length}件のメモを読み込みました。${ignoredMessage}`);
+  const ignored = parsed.ignored ? ` 対象外の${parsed.ignored}件は変更していません。` : "";
+  showToast(`${writes.length}件のメモを読み込みました。${ignored}`);
+}
+
+function collectOfficialNoteIds(article) {
+  const ids = new Set();
+  const scan = (blocks) => {
+    for (const block of blocks) {
+      if (block.kind === "item") { ids.add(block.item.id); scan(block.item.blocks); }
+      if (block.kind === "subitem1" || block.kind === "subitem2") { ids.add(block.subitem.id); scan(block.subitem.blocks); }
+      if (block.kind === "columns") for (const column of block.columns) scan(column.blocks);
+    }
+  };
+  for (const paragraph of article.paragraphs) {
+    ids.add(paragraph.id);
+    ids.add(paragraph.noteTargetId);
+    scan(paragraph.blocks);
+  }
+  return ids;
 }
 
 async function handleImportFile(file) {
@@ -358,11 +444,15 @@ async function handleImportFile(file) {
     return;
   }
   try {
-    const provisionIds = new Set([...articles.values()].flatMap(({ article }) => article.provisions.map((provision) => provision.id)));
+    const provisionIds = new Set();
+    for (const current of articles.values()) {
+      for (const id of collectOfficialNoteIds(current.statute.article)) provisionIds.add(id);
+      for (const provision of current.study.study.provisions) provisionIds.add(provision.id);
+    }
     const articleIds = new Set(catalog.articles.map((article) => article.id));
-    const parsed = parseImport(await file.text(), provisionIds, articleIds);
+    const parsed = parseImport(await file.text(), provisionIds, articleIds, CONTENT_VERSION);
     if (!parsed.notes.length && !parsed.bookmarks.length) {
-      showToast("320条から322条に対応するメモはありませんでした。");
+      showToast("収録114条に対応するメモ又はしおりはありませんでした。");
       return;
     }
     const conflicts = parsed.notes.filter((note) => state.notes.has(note.provisionId) && state.notes.get(note.provisionId).value !== note.value);
@@ -370,12 +460,7 @@ async function handleImportFile(file) {
       await applyImport(parsed, "keep");
       return;
     }
-    setOverlay("メモの競合", conflictBody(
-      conflicts.length,
-      () => applyImport(parsed, "keep"),
-      () => applyImport(parsed, "replace"),
-      closeOverlay
-    ), "dialog-panel");
+    setOverlay("メモの競合", conflictBody(conflicts.length, () => applyImport(parsed, "keep"), () => applyImport(parsed, "replace"), closeOverlay), "dialog-panel");
   } catch {
     showToast("このファイルは読み込めません。刑訴条文ナビのバックアップJSONを選んでください。");
   }
@@ -383,17 +468,19 @@ async function handleImportFile(file) {
 
 async function loadData() {
   const [catalogResponse, versionResponse] = await Promise.all([
-    fetch(`./data/catalog.json?cv=${CONTENT_VERSION}`),
+    fetch("./data/catalog.json"),
     fetch("./version.json", { cache: "no-store" })
   ]);
   if (!catalogResponse.ok || !versionResponse.ok) throw new Error("Data load failed");
   catalog = await catalogResponse.json();
   version = await versionResponse.json();
-  const loaded = await Promise.all(catalog.articles.map(async (item) => {
-    const response = await fetch(`${item.href}?cv=${CONTENT_VERSION}`);
-    if (!response.ok) throw new Error(`Article ${item.number} load failed`);
-    const json = await response.json();
-    return [item.number, json];
+  if (catalog.contentVersion !== CONTENT_VERSION || version.contentVersion !== CONTENT_VERSION || catalog.selectionVersion !== version.selectionVersion) throw new Error("Content version mismatch");
+  const loaded = await Promise.all(catalog.articles.map(async (meta) => {
+    const [statuteResponse, studyResponse] = await Promise.all([fetch(meta.statuteHref), fetch(meta.studyHref)]);
+    if (!statuteResponse.ok || !studyResponse.ok) throw new Error(`Article ${meta.routeNumber} load failed`);
+    const [statute, study] = await Promise.all([statuteResponse.json(), studyResponse.json()]);
+    if (statute.article.id !== meta.id || study.articleId !== meta.id || statute.contentVersion !== CONTENT_VERSION || study.contentVersion !== CONTENT_VERSION) throw new Error(`Article ${meta.routeNumber} version mismatch`);
+    return [meta.routeNumber, { meta, statute, study }];
   }));
   articles = new Map(loaded);
 }
@@ -406,20 +493,15 @@ async function initialize() {
     const snapshot = await storage.snapshot();
     state.notes = new Map(snapshot.notes.map((note) => [note.provisionId, note]));
     state.bookmarks = new Set(snapshot.bookmarks.map((bookmark) => bookmark.articleId));
-    const preferences = { ...defaults, ...filteredPreferences(snapshot.preferences) };
-    state.theme = preferences.theme;
-    state.fontScale = preferences.fontScale;
-    state.displayMode = preferences.displayMode;
-    state.activeArticleNumber = routeNumber() || preferences.lastArticleNumber || "320";
+    Object.assign(state, defaults, validPreferences(snapshot.preferences));
     state.verifiedLabel = new Date(`${version.verifiedAt}T00:00:00+09:00`).toLocaleDateString("ja-JP", { year: "numeric", month: "long", day: "numeric" });
     applyVisualPreferences();
-    if (!routeNumber()) goToArticle(state.activeArticleNumber, { replace: true });
-    else await handleRoute(routeNumber());
-    render();
     onRouteChange(handleRoute);
-    document.getElementById("header-search").addEventListener("click", () => openOverlay("search"));
-    document.getElementById("header-settings").addEventListener("click", () => openOverlay("settings"));
-    document.querySelectorAll("[data-overlay]").forEach((button) => button.addEventListener("click", () => openOverlay(button.dataset.overlay)));
+    if (!window.location.hash) goToArticle(state.activeArticleNumber, { replace: true });
+    else await handleRoute(parseRoute());
+    document.getElementById("header-search").addEventListener("click", () => goToView("search"));
+    document.getElementById("header-settings").addEventListener("click", () => goToView("settings"));
+    document.querySelectorAll("[data-overlay]").forEach((button) => button.addEventListener("click", () => goToView(button.dataset.overlay)));
     document.getElementById("apply-update").addEventListener("click", () => pwa?.applyUpdate());
     document.getElementById("dismiss-update").addEventListener("click", () => { updateBanner.hidden = true; });
     importFile.addEventListener("change", async () => { const [file] = importFile.files || []; await handleImportFile(file); importFile.value = ""; });
@@ -433,8 +515,8 @@ async function initialize() {
     updateConnectionLabel();
     if (state.storageMode === "memory") showToast("端末に保存できません。先にバックアップを書き出してください。");
   } catch (error) {
-    main.replaceChildren(Object.assign(document.createElement("div"), { className: "error-state", textContent: "条文データを読み込めませんでした。通信できる状態で再試行してください。" }));
     console.error(error);
+    main.replaceChildren(Object.assign(document.createElement("div"), { className: "error-state", textContent: "条文データを読み込めませんでした。通信できる状態で再試行してください。" }));
   }
 }
 

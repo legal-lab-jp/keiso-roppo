@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "292",
+  "articleId": "jp-323AC0000000131-a292",
+  "study": {
+    "title": "証拠調べの開始時期",
+    "topic": "公判手続",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "B"
+    },
+    "loadLabel": "冒頭手続との順序",
+    "oneLine": "原則として291条の冒頭手続が終わった後に、公判の証拠調べを開始します。",
+    "trigger": "冒頭手続と証拠調べの先後関係、公判前整理手続との関係を確認するとき。",
+    "overview": "被告人に審判対象と権利を理解させ、陳述の機会を与えた後で証拠調べへ進むという公判の順序を定めます。公判前整理手続で行う争点・証拠整理のための手続は、この時間的制約の例外です。",
+    "learning": {
+      "remember": "証拠調べは291条の手続後。ただし、公判前整理手続中の争点・証拠整理手続は例外です。",
+      "understand": "審判対象と被告人の立場を明確にしてから、事実認定の資料を法廷へ出すという順序です。",
+      "lookup": "具体的な冒頭手続は291条、冒頭陳述は296条、証拠請求は298条で確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a292-p1",
+        "label": "第292条",
+        "studyTitle": "証拠調べ開始の順序",
+        "purpose": "審判対象の明示と権利保障を終えた後に証拠調べへ進み、公判手続を段階的に進行させます。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a292-p1-s01",
+            "role": "actor",
+            "tag": "証拠調べ",
+            "text": "証拠調べは、"
+          },
+          {
+            "id": "jp-323AC0000000131-a292-p1-s02",
+            "role": "requirement",
+            "tag": "291条手続後",
+            "text": "第二百九十一条の手続が終つた後、"
+          },
+          {
+            "id": "jp-323AC0000000131-a292-p1-s03",
+            "role": "effect",
+            "tag": "実施",
+            "text": "これを行う。"
+          },
+          {
+            "id": "jp-323AC0000000131-a292-p1-s04",
+            "role": "limit",
+            "tag": "整理手続の例外",
+            "text": "ただし、次節第一款に定める公判前整理手続において争点及び証拠の整理のために行う手続については、この限りでない。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "291",
+        "displayNumber": "291",
+        "available": true
+      },
+      {
+        "routeNumber": "296",
+        "displayNumber": "296",
+        "available": true
+      },
+      {
+        "routeNumber": "298",
+        "displayNumber": "298",
+        "available": true
+      }
+    ]
+  }
+}

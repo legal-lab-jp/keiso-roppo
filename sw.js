@@ -1,41 +1,26 @@
-const APP_VERSION = "0.1.2-test";
-const CONTENT_VERSION = "2026-08-15.test1";
+const APP_VERSION = "1.0.1";
+const CONTENT_VERSION = "2026-08-15.exam114.1";
 const SHELL_CACHE = `keiso-roppo-shell-v${APP_VERSION}`;
 const CONTENT_CACHE = `keiso-roppo-content-${CONTENT_VERSION}`;
+const OFFLINE_MANIFEST = "./data/offline-assets.json";
 
-const shellAssets = [
-  "./",
-  "./index.html",
-  `./index.html?v=${APP_VERSION}`,
-  "./manifest.webmanifest",
-  "./version.json",
-  `./assets/css/app.css?v=${APP_VERSION}`,
-  `./js/app.js?v=${APP_VERSION}`,
-  "./js/router.js",
-  "./js/render.js",
-  "./js/search.js",
-  "./js/storage.js",
-  "./js/import-export.js",
-  "./js/pwa.js",
-  "./assets/icons/app-icon.svg",
-  "./assets/icons/icon-192.png",
-  "./assets/icons/icon-512.png",
-  "./assets/icons/icon-180.png"
-];
-
-const contentAssets = [
-  `./data/catalog.json?cv=${CONTENT_VERSION}`,
-  `./data/articles/320.json?cv=${CONTENT_VERSION}`,
-  `./data/articles/321.json?cv=${CONTENT_VERSION}`,
-  `./data/articles/322.json?cv=${CONTENT_VERSION}`
-];
+async function offlineAssets() {
+  const response = await fetch(new Request(OFFLINE_MANIFEST, { cache: "no-store" }));
+  if (!response.ok) throw new Error(`offline-assets取得失敗: ${response.status}`);
+  const manifest = await response.json();
+  if (manifest.contentVersion !== CONTENT_VERSION || !Array.isArray(manifest.shellAssets) || !Array.isArray(manifest.contentAssets)) throw new Error("offline-assetsの形式又はversionが不正です");
+  const all = [...manifest.shellAssets, ...manifest.contentAssets];
+  if (new Set(all).size !== all.length) throw new Error("offline-assetsに重複URLがあります");
+  return manifest;
+}
 
 self.addEventListener("install", (event) => {
   event.waitUntil((async () => {
+    const manifest = await offlineAssets();
     const shell = await caches.open(SHELL_CACHE);
     const content = await caches.open(CONTENT_CACHE);
-    await shell.addAll(shellAssets);
-    await content.addAll(contentAssets);
+    await shell.addAll(manifest.shellAssets);
+    await content.addAll(manifest.contentAssets);
   })());
 });
 
@@ -64,7 +49,7 @@ self.addEventListener("fetch", (event) => {
       const cache = await caches.open(SHELL_CACHE);
       try {
         const response = await fetch(new Request(request, { cache: "no-store" }));
-        if (response.ok) cache.put(request, response.clone());
+        if (response.ok) await cache.put(request, response.clone());
         return response;
       } catch {
         return (await cache.match(request, { ignoreSearch: true })) || Response.error();
@@ -75,22 +60,19 @@ self.addEventListener("fetch", (event) => {
 
   if (request.mode === "navigate") {
     event.respondWith((async () => {
-      const cache = await caches.open(SHELL_CACHE);
-      const cached = await cache.match("./index.html", { ignoreSearch: true });
-      if (cached) return cached;
-      return fetch(request);
+      const shell = await caches.open(SHELL_CACHE);
+      return (await shell.match("./index.html", { ignoreSearch: true })) || fetch(request);
     })());
     return;
   }
 
   event.respondWith((async () => {
-    const cache = url.pathname.includes("/data/") ? await caches.open(CONTENT_CACHE) : await caches.open(SHELL_CACHE);
-    const cached = await cache.match(request, { ignoreSearch: false });
+    const isContent = url.pathname.includes("/data/");
+    const cache = await caches.open(isContent ? CONTENT_CACHE : SHELL_CACHE);
+    const cached = await cache.match(request, { ignoreSearch: false }) || await cache.match(request, { ignoreSearch: true });
     if (cached) return cached;
     const response = await fetch(request);
-    if (response.ok) {
-      cache.put(request, response.clone());
-    }
+    if (response.ok) await cache.put(request, response.clone());
     return response;
   })());
 });

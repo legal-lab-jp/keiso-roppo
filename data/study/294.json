@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "294",
+  "articleId": "jp-323AC0000000131-a294",
+  "study": {
+    "title": "公判期日の訴訟指揮",
+    "topic": "公判手続",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "B"
+    },
+    "loadLabel": "裁判長の訴訟指揮",
+    "oneLine": "公判期日における訴訟指揮を裁判長に委ねます。",
+    "trigger": "公判期日に誰が審理の進行を指揮し、尋問等を整理するかを確認するとき。",
+    "overview": "法廷での発言、尋問、証拠調べ等を秩序立てて進める権限を裁判長に集中させる基本規定です。具体的な尋問・陳述等の制限は295条、証拠調べの範囲・順序・方法は297条へ展開します。",
+    "learning": {
+      "remember": "公判期日の訴訟指揮者は裁判長です。",
+      "understand": "裁判所の判断権そのものではなく、円滑で公正な公判進行を統括する権限の所在を示します。",
+      "lookup": "何をどこまで制限・変更できるかは、295条や297条の具体的根拠を確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a294-p1",
+        "label": "第294条",
+        "studyTitle": "訴訟指揮権",
+        "purpose": "公判期日の進行を一元的に管理し、秩序ある集中審理を可能にします。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a294-p1-s01",
+            "role": "requirement",
+            "tag": "公判期日",
+            "text": "公判期日における訴訟の指揮は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a294-p1-s02",
+            "role": "actor",
+            "tag": "裁判長",
+            "text": "裁判長が"
+          },
+          {
+            "id": "jp-323AC0000000131-a294-p1-s03",
+            "role": "effect",
+            "tag": "指揮する",
+            "text": "これを行う。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "295",
+        "displayNumber": "295",
+        "available": true
+      },
+      {
+        "routeNumber": "297",
+        "displayNumber": "297",
+        "available": true
+      },
+      {
+        "routeNumber": "298",
+        "displayNumber": "298",
+        "available": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "402",
+  "articleId": "jp-323AC0000000131-a402",
+  "study": {
+    "title": "不利益変更の禁止",
+    "topic": "控訴・上告",
+    "priority": {
+      "essay": "A",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "被告人側控訴の保護",
+    "oneLine": "被告人又は被告人のためだけに控訴された事件では、原判決より重い刑を言い渡せません。",
+    "trigger": "被告人側が第一審判決を不服として控訴したため、控訴審でかえって刑が重くなる可能性を検討するとき。",
+    "overview": "被告人又は被告人の利益のために控訴された事件について、控訴によって原判決より重い刑を受ける危険を除き、被告人が上訴権を行使しやすくします。",
+    "learning": {
+      "remember": "被告人が控訴、又は被告人のため控訴→原判決より重い刑は不可です。",
+      "understand": "上訴したこと自体による報復的・萎縮的な不利益を防ぎ、被告人側の上訴権を保障します。",
+      "lookup": "誰が控訴した事件かを必ず確認します。再審における同趣旨の規定は452条です。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a402-p1",
+        "label": "第402条",
+        "studyTitle": "不利益変更禁止",
+        "purpose": "被告人側の控訴により刑が重くなる不安を除き、上訴権の実効的な行使を保障します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a402-p1-s01",
+            "role": "requirement",
+            "tag": "被告人側の控訴",
+            "text": "被告人が控訴をし、又は被告人のため控訴をした事件については、"
+          },
+          {
+            "id": "jp-323AC0000000131-a402-p1-s02",
+            "role": "effect",
+            "tag": "重い刑を禁止",
+            "text": "原判決の刑より重い刑を言い渡すことはできない。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "397",
+        "displayNumber": "397",
+        "available": true
+      },
+      {
+        "routeNumber": "400",
+        "displayNumber": "400",
+        "available": true
+      },
+      {
+        "routeNumber": "452",
+        "displayNumber": "452",
+        "available": true
+      }
+    ]
+  }
+}

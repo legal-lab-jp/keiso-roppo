@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "revisionId": "323AC0000000131_20260813_508AC0000000067",
+  "source": {
+    "provider": "e-Gov法令API Version 2",
+    "sourceUrl": "https://laws.e-gov.go.jp/law/323AC0000000131",
+    "apiUrl": "https://laws.e-gov.go.jp/api/2/law_file/xml/323AC0000000131_20260813_508AC0000000067",
+    "verifiedAt": "2026-08-15"
+  },
+  "article": {
+    "id": "jp-323AC0000000131-a212",
+    "num": "212",
+    "routeNum": "212",
+    "displayNumber": "第二百十二条",
+    "officialCaption": null,
+    "path": [
+      "第二編　第一審",
+      "第一章　捜査"
+    ],
+    "order": 264,
+    "paragraphs": [
+      {
+        "id": "jp-323AC0000000131-a212-p1",
+        "noteTargetId": "jp-323AC0000000131-a212-p1",
+        "num": "1",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a212-p1-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "現に罪を行い、又は現に罪を行い終つた者を現行犯人とする。"
+                }
+              ],
+              "plainText": "現に罪を行い、又は現に罪を行い終つた者を現行犯人とする。"
+            }
+          }
+        ],
+        "plainText": "現に罪を行い、又は現に罪を行い終つた者を現行犯人とする。"
+      },
+      {
+        "id": "jp-323AC0000000131-a212-p2",
+        "noteTargetId": "jp-323AC0000000131-a212-p2-intro",
+        "num": "2",
+        "caption": "",
+        "numberText": "",
+        "blocks": [
+          {
+            "kind": "sentence",
+            "sentence": {
+              "id": "jp-323AC0000000131-a212-p2-sentence-1",
+              "inline": [
+                {
+                  "type": "text",
+                  "text": "左の各号の一にあたる者が、罪を行い終つてから間がないと明らかに認められるときは、これを現行犯人とみなす。"
+                }
+              ],
+              "plainText": "左の各号の一にあたる者が、罪を行い終つてから間がないと明らかに認められるときは、これを現行犯人とみなす。"
+            }
+          },
+          {
+            "kind": "item",
+            "item": {
+              "id": "jp-323AC0000000131-a212-p2-i1",
+              "num": "1",
+              "titleText": "一",
+              "blocks": [
+                {
+                  "kind": "sentence",
+                  "sentence": {
+                    "id": "jp-323AC0000000131-a212-p2-i1-sentence-1",
+                    "inline": [
+                      {
+                        "type": "text",
+                        "text": "犯人として追呼されているとき。"
+                      }
+                    ],
+                    "plainText": "犯人として追呼されているとき。"
+                  }
+                }
+              ],
+              "plainText": "犯人として追呼されているとき。"
+            }
+          },
+          {
+            "kind": "item",
+            "item": {
+              "id": "jp-323AC0000000131-a212-p2-i2",
+              "num": "2",
+              "titleText": "二",
+              "blocks": [
+                {
+                  "kind": "sentence",
+                  "sentence": {
+                    "id": "jp-323AC0000000131-a212-p2-i2-sentence-1",
+                    "inline": [
+                      {
+                        "type": "text",
+                        "text": "贓物又は明らかに犯罪の用に供したと思われる兇器その他の物を所持しているとき。"
+                      }
+                    ],
+                    "plainText": "贓物又は明らかに犯罪の用に供したと思われる兇器その他の物を所持しているとき。"
+                  }
+                }
+              ],
+              "plainText": "贓物又は明らかに犯罪の用に供したと思われる兇器その他の物を所持しているとき。"
+            }
+          },
+          {
+            "kind": "item",
+            "item": {
+              "id": "jp-323AC0000000131-a212-p2-i3",
+              "num": "3",
+              "titleText": "三",
+              "blocks": [
+                {
+                  "kind": "sentence",
+                  "sentence": {
+                    "id": "jp-323AC0000000131-a212-p2-i3-sentence-1",
+                    "inline": [
+                      {
+                        "type": "text",
+                        "text": "身体又は被服に犯罪の顕著な証跡があるとき。"
+                      }
+                    ],
+                    "plainText": "身体又は被服に犯罪の顕著な証跡があるとき。"
+                  }
+                }
+              ],
+              "plainText": "身体又は被服に犯罪の顕著な証跡があるとき。"
+            }
+          },
+          {
+            "kind": "item",
+            "item": {
+              "id": "jp-323AC0000000131-a212-p2-i4",
+              "num": "4",
+              "titleText": "四",
+              "blocks": [
+                {
+                  "kind": "sentence",
+                  "sentence": {
+                    "id": "jp-323AC0000000131-a212-p2-i4-sentence-1",
+                    "inline": [
+                      {
+                        "type": "text",
+                        "text": "誰何されて逃走しようとするとき。"
+                      }
+                    ],
+                    "plainText": "誰何されて逃走しようとするとき。"
+                  }
+                }
+              ],
+              "plainText": "誰何されて逃走しようとするとき。"
+            }
+          }
+        ],
+        "plainText": "左の各号の一にあたる者が、罪を行い終つてから間がないと明らかに認められるときは、これを現行犯人とみなす。一犯人として追呼されているとき。二贓物又は明らかに犯罪の用に供したと思われる兇器その他の物を所持しているとき。三身体又は被服に犯罪の顕著な証跡があるとき。四誰何されて逃走しようとするとき。"
+      }
+    ],
+    "plainText": "第二百十二条現に罪を行い、又は現に罪を行い終つた者を現行犯人とする。左の各号の一にあたる者が、罪を行い終つてから間がないと明らかに認められるときは、これを現行犯人とみなす。一犯人として追呼されているとき。二贓物又は明らかに犯罪の用に供したと思われる兇器その他の物を所持しているとき。三身体又は被服に犯罪の顕著な証跡があるとき。四誰何されて逃走しようとするとき。"
+  }
+}

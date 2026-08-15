@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "129",
+  "articleId": "jp-323AC0000000131-a129",
+  "study": {
+    "title": "検証に伴う必要な処分",
+    "topic": "検証・鑑定",
+    "priority": {
+      "essay": "A",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "検証の範囲",
+    "oneLine": "検証の実施に必要な身体検査、死体解剖、墳墓発掘、物の破壊その他の処分を認めます。",
+    "trigger": "実況見分・検証に伴って身体を検査する、物を破壊する、死体を解剖するなどの処分根拠を確認するとき。",
+    "overview": "検証は物・場所・身体の状態を五官の作用で認識する処分です。その実効性を確保するため必要な付随処分を列挙します。捜査機関による218条の検証には、222条1項を通じて本条が準用されます。",
+    "learning": {
+      "remember": "身体検査、死体解剖、墳墓発掘、物の破壊その他必要な処分。",
+      "understand": "身体検査は検証の一内容ですが、218条1項後段により身体検査令状を要し、131条の配慮も及ぶこと。",
+      "lookup": "拒否に対する過料・刑罰・強制実施は137条から140条で定められ、今回は暗記対象から外します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a129-p1",
+        "label": "第129条",
+        "studyTitle": "検証の内容",
+        "purpose": "対象の状態を正確に認識するため、検証に不可欠な付随処分を可能にします。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a129-p1-s01",
+            "role": "requirement",
+            "tag": "検証",
+            "text": "検証については、"
+          },
+          {
+            "id": "jp-323AC0000000131-a129-p1-s02",
+            "role": "effect",
+            "tag": "必要な処分",
+            "text": "身体の検査、死体の解剖、墳墓の発掘、物の破壊その他必要な処分をすることができる。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "131",
+        "displayNumber": "131",
+        "available": true
+      },
+      {
+        "routeNumber": "218",
+        "displayNumber": "218",
+        "available": true
+      },
+      {
+        "routeNumber": "222",
+        "displayNumber": "222",
+        "available": true
+      }
+    ]
+  }
+}

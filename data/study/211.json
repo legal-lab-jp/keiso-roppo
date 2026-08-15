@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "211",
+  "articleId": "jp-323AC0000000131-a211",
+  "study": {
+    "title": "緊急逮捕後の手続",
+    "topic": "逮捕",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "B"
+    },
+    "loadLabel": "接続を理解",
+    "oneLine": "緊急逮捕後の身柄処理を通常逮捕後の手続へ接続し、同じ時間制限と権利保障を及ぼします。",
+    "trigger": "緊急逮捕後にも203条以下の告知・弁解・送致・勾留請求の時間制限が適用される根拠を確認するとき。",
+    "overview": "210条は逮捕の入口だけを特別に認めます。逮捕後は通常逮捕の場合の規定を準用し、緊急逮捕だから長く留置できるという扱いを許しません。",
+    "learning": {
+      "remember": "全文暗記は不要です。緊急逮捕後も通常逮捕後の手続へつながると理解します。",
+      "understand": "210条の例外は逮捕時の令状順序に限られ、その後の48時間・72時間等は共通であること。",
+      "lookup": "具体的な処理は203条から205条を見ます。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a211-p1",
+        "label": "第211条",
+        "studyTitle": "接続条文",
+        "purpose": "緊急逮捕後にも通常逮捕後と同じ手続保障・時間制限を及ぼします。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a211-p1-s01",
+            "role": "requirement",
+            "tag": "緊急逮捕",
+            "text": "前条の規定により被疑者が逮捕された場合には、"
+          },
+          {
+            "id": "jp-323AC0000000131-a211-p1-s02",
+            "role": "effect",
+            "tag": "通常逮捕規定を準用",
+            "text": "第百九十九条の規定により被疑者が逮捕された場合に関する規定を準用する。"
+          }
+        ]
+      }
+    ],
+    "omitted": "",
+    "related": [
+      {
+        "routeNumber": "210",
+        "displayNumber": "210",
+        "available": true
+      },
+      {
+        "routeNumber": "203",
+        "displayNumber": "203",
+        "available": true
+      },
+      {
+        "routeNumber": "204",
+        "displayNumber": "204",
+        "available": true
+      },
+      {
+        "routeNumber": "205",
+        "displayNumber": "205",
+        "available": true
+      }
+    ]
+  }
+}

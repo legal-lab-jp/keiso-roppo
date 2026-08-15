@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "2026-08-15.exam114.1",
+  "selectionVersion": "exam114-2026-08-15.1",
+  "lawId": "323AC0000000131",
+  "routeNumber": "88",
+  "articleId": "jp-323AC0000000131-a88",
+  "study": {
+    "title": "保釈請求権者",
+    "topic": "保釈",
+    "priority": {
+      "essay": "B",
+      "preliminaryShort": "A"
+    },
+    "loadLabel": "主体を確認",
+    "oneLine": "勾留中の被告人本人と一定の関係者に、保釈を請求する権限を認めます。",
+    "trigger": "誰が保釈請求をできるか、本人以外の家族等に請求権があるかを確認するとき。",
+    "overview": "保釈制度を実際に利用できるよう、本人だけでなく弁護人や一定の身分関係者にも請求権を認めます。",
+    "learning": {
+      "remember": "被告人、弁護人、法定代理人、保佐人、配偶者、直系親族、兄弟姉妹。",
+      "understand": "本条は請求権者、89条は請求後の権利保釈要件を定めること。",
+      "lookup": "列挙順序は短答時に条文で確認します。"
+    },
+    "provisions": [
+      {
+        "id": "jp-323AC0000000131-a88-p1",
+        "label": "第88条第1項",
+        "studyTitle": "短答",
+        "purpose": "本人が拘束中で十分に動けない場合にも保釈請求の機会を確保します。",
+        "segments": [
+          {
+            "id": "jp-323AC0000000131-a88-p1-s01",
+            "role": "actor",
+            "tag": "請求者",
+            "text": "勾留されている被告人又はその弁護人、法定代理人、保佐人、配偶者、直系の親族若しくは兄弟姉妹は、"
+          },
+          {
+            "id": "jp-323AC0000000131-a88-p1-s02",
+            "role": "effect",
+            "tag": "権利",
+            "text": "保釈の請求をすることができる。"
+          }
+        ]
+      }
+    ],
+    "omitted": "2項は82条3項の準用のみであり、独立した学習優先度が低いため省略します。",
+    "related": [
+      {
+        "routeNumber": "87",
+        "displayNumber": "87",
+        "available": true
+      },
+      {
+        "routeNumber": "89",
+        "displayNumber": "89",
+        "available": true
+      },
+      {
+        "routeNumber": "90",
+        "displayNumber": "90",
+        "available": true
+      }
+    ]
+  }
+}
