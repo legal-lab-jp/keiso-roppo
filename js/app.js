@@ -165,9 +165,9 @@ function renderUnknownRoute() {
   applyVisualPreferences();
 }
 
-async function updateRecent(routeNumber) {
+function updateRecent(routeNumber) {
   state.recentArticles = [routeNumber, ...state.recentArticles.filter((item) => item !== routeNumber)].slice(0, 20);
-  await persistPreference("recentArticles", state.recentArticles);
+  return persistPreference("recentArticles", state.recentArticles);
 }
 
 function closeOverlay({ preserveRoute = false } = {}) {
@@ -249,11 +249,15 @@ async function handleRoute(route) {
     }
     state.activeArticleNumber = route.routeNumber;
     state.openMemos.clear();
-    await persistPreference("lastArticleNumber", route.routeNumber);
-    await updateRecent(route.routeNumber);
+    const preferenceWrites = [
+      persistPreference("lastArticleNumber", route.routeNumber),
+      updateRecent(route.routeNumber)
+    ];
     closeOverlay({ preserveRoute: true });
     render();
     window.scrollTo({ top: 0, behavior: "auto" });
+    const writeResults = await Promise.allSettled(preferenceWrites);
+    if (writeResults.some((result) => result.status === "rejected")) console.warn("条文の閲覧履歴を端末に保存できませんでした。");
     return;
   }
   if (["articles", "bookmarks", "search", "settings", "sources"].includes(route.kind)) {

@@ -23,7 +23,10 @@ export function routeNumber(hash = window.location.hash) {
 export function goToArticle(routeNumber, { replace = false } = {}) {
   if (!/^\d+(?:-\d+)?$/.test(String(routeNumber))) return false;
   const nextHash = `#/article/${routeNumber}`;
-  if (window.location.hash === nextHash) return true;
+  if (window.location.hash === nextHash) {
+    window.dispatchEvent(new HashChangeEvent("hashchange"));
+    return true;
+  }
   if (replace) {
     window.history.replaceState(null, "", nextHash);
     window.dispatchEvent(new HashChangeEvent("hashchange"));

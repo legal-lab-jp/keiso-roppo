@@ -46,8 +46,9 @@ const expectedLegacyIds = [
 for (const file of ["index.html", "manifest.webmanifest", "sw.js", "version.json", "assets/css/app.css", "assets/icons/icon-180.png", "assets/icons/icon-192.png", "assets/icons/icon-512.png", "data/catalog.json", "data/selection.json", "data/offline-assets.json", "js/app.js", "js/render.js", "js/router.js", "js/search.js", "js/storage.js", "js/import-export.js", "js/pwa.js", "tools/build-exam-corpus.mjs"]) check(await exists(resolve(root, file)), `不足ファイル: ${file}`);
 for (const obsolete of ["data/articles", "data/laws", "data/laws.json", "tools/build-law-data.mjs", "tools/validate-keiso-test-app.mjs"]) check(!(await exists(resolve(root, obsolete))), `全文版又はテスト版の不要ファイルが残っています: ${obsolete}`);
 
-const [catalog, selection, offline, version, index, manifest] = await Promise.all([
-  readJson(resolve(root, "data/catalog.json")), readJson(resolve(root, "data/selection.json")), readJson(resolve(root, "data/offline-assets.json")), readJson(resolve(root, "version.json")), readFile(resolve(root, "index.html"), "utf8"), readJson(resolve(root, "manifest.webmanifest"))
+const [catalog, selection, offline, version, index, manifest, serviceWorker, appSource, renderSource, routerSource] = await Promise.all([
+  readJson(resolve(root, "data/catalog.json")), readJson(resolve(root, "data/selection.json")), readJson(resolve(root, "data/offline-assets.json")), readJson(resolve(root, "version.json")), readFile(resolve(root, "index.html"), "utf8"), readJson(resolve(root, "manifest.webmanifest")),
+  readFile(resolve(root, "sw.js"), "utf8"), readFile(resolve(root, "js/app.js"), "utf8"), readFile(resolve(root, "js/render.js"), "utf8"), readFile(resolve(root, "js/router.js"), "utf8")
 ]);
 check(catalog.contentVersion === "2026-08-15.exam114.1", "catalogのcontentVersionが不正です。");
 check(selection.contentVersion === catalog.contentVersion && offline.contentVersion === catalog.contentVersion && version.contentVersion === catalog.contentVersion, "コンテンツversionが一致しません。");
@@ -60,6 +61,12 @@ check(manifest.id === "./" && manifest.start_url === "./" && manifest.scope === 
 check(/<html lang="ja">/.test(index) && /default-src 'self'/.test(index), "indexのlang又はCSPが不正です。");
 check(!/<script(?![^>]*\bsrc=)/i.test(index) && !/<style[\s>]/i.test(index) && !/\sstyle=/.test(index), "インラインscript又はstyleは禁止です。");
 check(/重要条文114条/.test(index) && !/テスト版/.test(index), "本番版の表示文言が不正です。");
+check(version.appVersion === "1.0.2" && /APP_VERSION = "1\.0\.2"/.test(serviceWorker), "appVersionが1.0.2で一致していません。");
+check(index.includes("app.css?v=1.0.2") && index.includes("app.js?v=1.0.2") && offline.shellAssets.includes("./assets/css/app.css?v=1.0.2") && offline.shellAssets.includes("./js/app.js?v=1.0.2"), "1.0.2のPWA資産URLが一致していません。");
+check(/HashChangeEvent\("hashchange"\)/.test(routerSource), "同一条文の再選択時にroute処理を再実行できません。");
+check(/window\.scrollTo\(\{ top: 0/.test(appSource) && /Promise\.allSettled\(preferenceWrites\)/.test(appSource), "条文遷移の即時表示又は保存分離がありません。");
+check(/paragraphReference/.test(renderSource) && /itemReference/.test(renderSource) && /className: "provision-reference paragraph-reference"/.test(renderSource), "公式条文の項・号表示がありません。");
+check(/input\.addEventListener\("input", update\)/.test(renderSource), "検索結果の即時更新がありません。");
 
 const topicCounts = {};
 const priorityCounts = {};

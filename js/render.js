@@ -32,6 +32,14 @@ function displayRoute(routeNumber) {
   return String(routeNumber).replaceAll("-", "の");
 }
 
+function paragraphReference(paragraph) {
+  return `第${paragraph.num}項`;
+}
+
+function itemReference(item) {
+  return item.num ? `第${item.num}号` : `${item.titleText}号`;
+}
+
 function categoryChips(meta) {
   return node("div", { className: "article-tags" }, [
     node("span", { className: "article-tag", text: `論文 ${meta.essayPriority}` }),
@@ -122,8 +130,9 @@ function renderBlocks(blocks, state, notes, handlers) {
       result.push(columns);
     } else if (block.kind === "item") {
       const item = node("section", { className: "statute-item", id: `text-${block.item.id}` });
-      const title = node("div", { className: "statute-line" }, [node("span", { className: "item-mark", text: `${block.item.titleText}　` }), renderBlocks(block.item.blocks, state, notes, handlers)]);
-      item.append(title, memoControl(block.item.id, `${block.item.titleText}号`, state, notes, handlers));
+      const itemLabel = itemReference(block.item);
+      const title = node("div", { className: "statute-line" }, [node("span", { className: "provision-reference item-reference", text: itemLabel }), renderBlocks(block.item.blocks, state, notes, handlers)]);
+      item.append(title, memoControl(block.item.id, itemLabel, state, notes, handlers));
       result.push(item);
     } else if (block.kind === "subitem1" || block.kind === "subitem2") {
       const subitem = node("section", { className: "statute-subitem", id: `text-${block.subitem.id}` });
@@ -139,9 +148,10 @@ function renderBlocks(blocks, state, notes, handlers) {
 
 function renderParagraph(paragraph, law, state, notes, handlers) {
   const section = node("section", { className: "statute-provision", id: `text-${paragraph.noteTargetId}` });
-  const label = `${law.displayNumber}${paragraph.num > 1 ? `第${paragraph.num}項` : ""}`;
+  const paragraphLabel = paragraphReference(paragraph);
+  const label = `${law.displayNumber}${paragraphLabel}`;
+  section.append(node("div", { className: "provision-reference paragraph-reference", text: paragraphLabel }));
   if (paragraph.caption) section.append(node("p", { className: "paragraph-caption", text: paragraph.caption }));
-  if (paragraph.numberText) section.append(node("span", { className: "paragraph-number", text: paragraph.numberText }));
   section.append(...renderBlocks(paragraph.blocks, state, notes, handlers));
   section.append(memoControl(paragraph.noteTargetId, label, state, notes, handlers));
   return section;
@@ -321,7 +331,6 @@ export function searchBody({ onSearch, onNavigate, initialQuery = "" }) {
   const label = node("label", { text: "条文番号・語句で検索", attrs: { for: "search-field" } });
   const input = node("input", { id: "search-field", type: "search", value: initialQuery, placeholder: "例：321、特信情況、逮捕の現場", attrs: { autocomplete: "off" } });
   const results = node("div", { className: "search-results", attrs: { "aria-live": "polite" } });
-  let timer;
   const update = () => {
     const found = onSearch(input.value);
     results.replaceChildren();
@@ -339,8 +348,8 @@ export function searchBody({ onSearch, onNavigate, initialQuery = "" }) {
       results.append(row);
     }
   };
-  input.addEventListener("input", () => { clearTimeout(timer); timer = window.setTimeout(update, 120); });
-  input.addEventListener("keydown", (event) => { if (event.key === "Enter") { const found = onSearch(input.value); if (found[0]) onNavigate(found[0].routeNumber); } });
+  input.addEventListener("input", update);
+  input.addEventListener("keydown", (event) => { if (event.key === "Enter") { event.preventDefault(); const found = onSearch(input.value); if (found[0]) onNavigate(found[0].routeNumber); } });
   body.append(label, input, results);
   queueMicrotask(() => input.focus());
   update();
